@@ -123,7 +123,7 @@ tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
 key_file=<path to your private keyfile> # TODO 正确路径
 ```
-- 将在甲骨文用户设置添加api密钥生成的config参数 在用户根目录创建 vim或者vi ~/.oci/config并粘贴进去(请注意 config文件内的私钥位置要正确，私钥在你添加api的时候下载的，一般放到跟config同路径，如：key_file=/root/.oci/private_key.pem)
+- 将在甲骨文用户设置添加api密钥的配置文件预览里面的参数 在用户根目录创建 vim或者vi ~/.oci/config并粘贴进去(请注意 config文件内的私钥位置要正确，私钥在你添加api的时候下载的，一般放到跟config同路径，如：key_file=/root/.oci/oci_api_key.pem)
 - ![image](https://github.com/semicons/java_oci_manage/blob/main/1637652579448.jpg)
 
 
