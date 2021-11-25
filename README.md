@@ -58,12 +58,12 @@ sudo rm -rf linux-oci-semicons.tar.gz sh_java_oci.sh jar_oci_manage.jar && wget 
 ```
 ##### 使用说明
 ```text
-手动下载用户请先授权使用 sudo chmod +x java_oci.sh
-后台运行请执行 screen -S java_oci bash java_oci.sh
-查看后台运行情况 screen -r java_oci
+手动下载用户请先授权使用 sudo chmod +x sh_java_oci.sh
+后台运行请执行 screen -S sh_java_oci bash sh_java_oci.sh
+查看后台运行情况 screen -r sh_java_oci
 编辑本脚本或自定义文档的 【begin】 和【end】之间的参数进行开机设定（不开机填不填无影响）
-【脚本执行方式 bash java_oci.sh】
-支持传参 如：bash java_oci.sh -m <你的配置文件路径,不写取本文档配置>
+【脚本执行方式 bash sh_java_oci.sh】
+支持传参 如：bash sh_java_oci.sh -m <你的配置文件路径,不写取本文档配置>
   -o <oci config路径 不写取默认路径 ~/.oci/config>
   -j <自定义jar包路径,不写取默认当前路径>
 ```
