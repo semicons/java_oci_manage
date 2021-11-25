@@ -130,7 +130,7 @@ key_file=<path to your private keyfile> # TODO 正确路径
 
 #### 其他帮助
 - Q:tg频道?
-- A:https://t.me/agentONE_R
+- A:https://t.me/agentONE_R  (关注后点击频道名字后可以进行讨论或求助)
 
 
 #### 更新日志
