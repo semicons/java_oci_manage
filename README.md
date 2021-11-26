@@ -53,24 +53,24 @@ sudo rm -rf linux-oci-semicons.tar.gz sh_java_oci.sh jar_oci_manage.jar && wget 
 ```text
   1）下载压缩包 解压文件 tar -zxvf xxx.tar.gz 
   2）sudo chmod +x sh_java_oci.sh
-  3）运行 bash sh_java_oci.sh 
-  注: screen -S java_oci bash sh_java_oci.sh(后台运行)
-      screen -r java_oci(查看后台运行情况)
 ```
 ##### 使用说明
 ```text
-手动下载用户请先授权使用 sudo chmod +x sh_java_oci.sh
-后台运行请执行 screen -S sh_java_oci bash sh_java_oci.sh
-查看后台运行情况 screen -r sh_java_oci
-编辑本脚本或自定义文档的 【begin】 和【end】之间的参数进行开机设定（不开机填不填无影响）
-【脚本执行方式 bash sh_java_oci.sh】
-支持传参 如：bash sh_java_oci.sh -m <你的配置文件路径,不写取本文档配置>
-  -o <oci config路径 不写取默认路径 ~/.oci/config>
-  -j <自定义jar包路径,不写取默认当前路径>
+如何运行？
+bash sh_java_oci.sh （正常运行指令）
+screen -S sh_java_oci bash sh_java_oci.sh （后台运行指令，使用指令后可关闭窗口）
+screen -r sh_java_oci （查看后台程序运行详细）
+
+参数如何设置？
+编辑本脚本或复制下面配置参数到任意自定义文档进行开机设定（不开机填不填无影响）
+指令支持传参 
+如：bash sh_java_oci.sh -m <你的配置文件路径,不写取本文档配置>
+-o <oci config路径 不写取默认路径 ~/.oci/config>
+-j <自定义jar包路径,不写取默认当前路径>
 ```
-##### 编辑配置文件
+##### 编辑配置参数
+- 编辑脚本文件 sh_java_oci.sh 或复制下面参数到自定义文档
 ```text
-编辑脚本文件 sh_java_oci.sh 或复制到自定义文档
 
 #此参数勿动 为参数读取的开始
 begin=begin
@@ -88,7 +88,7 @@ memorySize=12
 volumeSize=50
 
 #公钥 （必填）
-sshPublicKey="ssh-rsa xxx ssh-key"
+sshPublicKey=""
 
 #要刷的vps的数量 （非必填，默认为1）
 vpsNum=2
@@ -114,24 +114,27 @@ highTime=15
 end=end
 ```
 
-##### oci变量
-- 甲骨文后台=>用户设置>>资源>>API秘钥>>添加API秘钥
+##### oci（甲骨文）变量
+- 【操作导航】甲骨文后台=>用户设置>>资源>>API秘钥>>添加API秘钥
+- 说明∶此处配置是连接甲骨文云接口的所必须参数，获取位置看↑操作导航
 ```text
+大致如下↓
+
 [DEFAULT]
 user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
-key_file=<path to your private keyfile> # TODO 正确路径
+key_file=<写你的密钥文件路径>
 ```
-- 将在甲骨文用户设置添加api密钥的配置文件预览里面的参数 在用户根目录创建 vim或者vi ~/.oci/config并粘贴进去(请注意 config文件内的私钥位置要正确，私钥在你添加api的时候下载的，一般放到跟config同路径，如：key_file=/root/.oci/oci_api_key.pem)
+- 将在甲骨文用户设置添加api密钥的配置文件预览里面的参数 在用户根目录创建 vim或者vi ~/.oci/config并粘贴进去(请注意 config文件内的私钥位置要正确，私钥在你添加api的时候生成下载的，一般放到跟config同路径，如：key_file=/root/.oci/oci_api_key.pem)
 - ![image](https://github.com/semicons/java_oci_manage/blob/main/1637652579448.jpg)
 
 
 
 #### 其他帮助
 - Q:tg频道?
-- A:https://t.me/agentONE_R  (关注后点击频道名字后可以进行讨论或求助)
+- A:https://t.me/agentONE_R  (关注后点击频道名字可以进行讨论或求助)
 
 
 #### 更新日志
