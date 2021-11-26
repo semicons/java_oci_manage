@@ -114,7 +114,7 @@ end=end
 ```
 
 ##### oci变量
-- 请在甲骨文后台操作生成
+- 甲骨文后台=>用户设置>>资源>>API秘钥>>添加API秘钥
 ```text
 [DEFAULT]
 user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
