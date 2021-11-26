@@ -21,7 +21,7 @@
 [LINUX]Ubuntu20.04(已测试).Debian(未测试，但是应该可以).Centos(需手动安装jdk8)
 
 ## 已实现功能
-* [x] 开机(arm和amd)
+* [x] 开机(amd和刷arm)
 * [x] 一键查询和更改ip
 * [x] 修改硬盘大小和性能
 * [x] 删除硬盘
