@@ -17,8 +17,10 @@
 
 ## 环境
 
-[JDK] 1.8
-[LINUX]Ubuntu20.04(已测试).Debian(未测试，但是应该可以).Centos(需手动安装jdk8)
+- [JDK] 1.8
+
+- [LINUX] Ubuntu20.04(已测试).Debian(未测试，但是应该可以).Centos(需手动安装jdk8)
+- [Windows]不支持
 
 ## 已实现功能
 * [x] 开机(amd和刷arm)
