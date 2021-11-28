@@ -90,7 +90,7 @@ memorySize=12
 #硬盘数量 （必填）
 volumeSize=50
 
-#公钥 （必填）
+#公钥内容，非路径（必填）
 sshPublicKey=""
 
 #要刷的vps的数量 （非必填，默认为1）
