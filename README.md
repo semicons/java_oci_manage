@@ -51,7 +51,7 @@
 
 #### 一、Linux一键部署或更新（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
-sudo rm -rf linux-oci-semicons.tar.gz sh_java_oci.sh jar_oci_manage.jar && wget -O linux-oci-semicons.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/linux-oci-semicons.tar.gz && tar -zxvf linux-oci-semicons.tar.gz && sudo chmod +x   sh_java_oci.sh && ./sh_java_oci.sh
+rm -rf linux-oci-semicons.tar.gz sh_java_oci.sh jar_oci_manage.jar && wget -O linux-oci-semicons.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/linux-oci-semicons.tar.gz && tar -zxvf linux-oci-semicons.tar.gz && chmod +x sh_java_oci.sh && ./sh_java_oci.sh
 ```
 
 #### 二、手动安装
