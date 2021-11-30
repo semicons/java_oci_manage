@@ -141,12 +141,15 @@ key_file=<写你的密钥文件路径>
 #### 其他帮助
 - Q:tg频道?
 - A:https://t.me/agentONE_R  (关注后点击频道名字可以进行讨论或求助)
-
+- 
 - Q:错误 Caused by: java.io.FileNotFoundException: /root/.oci/oci_api_key.pem # TODO (没有那个文件或目录) 
 - A:删除后面的# TODO
-
+- 
 - Q:如何ssh登录？
 - A:使用生成公钥的时候对应的私钥登录
+- 
+- Q:Unable to locate package openjdk***？
+- A:请谷歌搜索centos(对应系统)8(对应版本)如何安装openjdk8
 
 #### 更新日志
 <details>
