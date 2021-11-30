@@ -64,7 +64,8 @@ sudo rm -rf linux-oci-semicons.tar.gz sh_java_oci.sh jar_oci_manage.jar && wget 
 如何运行？
 bash sh_java_oci.sh （正常运行指令）
 screen -S sh_java_oci bash sh_java_oci.sh （后台运行指令，使用指令后可关闭窗口）
-screen -r sh_java_oci （查看后台程序运行详细）
+screen -r sh_java_oci （查看后台程序运行详细  ctrl + c 取消后台运行）
+
 
 参数如何设置？
 编辑本脚本或复制下面配置参数到任意自定义文档进行开机设定（不开机填不填无影响）
@@ -83,10 +84,10 @@ begin=begin
 #cpu类型 请填写ARM或AMD （必填）
 cpuType=ARM
 
-#cpu数量 （必填）
+#cpu数量 （开机和升级或降级 必填）
 cpus=2
 
-#内存数量 （必填）
+#内存数量 （开机和升级或降级 必填）
 memorySize=12
 
 #硬盘数量 （必填）
