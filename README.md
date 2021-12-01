@@ -130,7 +130,7 @@ user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
-key_file=<写你的密钥文件路径>
+key_file=写你的密钥文件路径
 ```
 - 将在甲骨文用户设置添加api密钥的配置文件预览里面的参数 在用户根目录创建 vim或者vi ~/.oci/config并粘贴进去(请注意 config文件内的私钥位置要正确，私钥在你添加api的时候生成下载的，一般放到跟config同路径，如：key_file=/root/.oci/oci_api_key.pem)
 - ![image](https://github.com/semicons/java_oci_manage/blob/main/1637652579448.jpg)
