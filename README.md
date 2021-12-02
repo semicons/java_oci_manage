@@ -103,7 +103,7 @@ vpsName=""
 
 
 #非必填项
-#tg bot key
+#tg bot token
 bot_key=""
 
 #用户id
