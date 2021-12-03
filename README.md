@@ -106,7 +106,7 @@ vpsName=""
 #tg bot token
 bot_key=""
 
-#用户id
+#用户id （可以通过机器人 User ID Bot 获取）
 chat_id=""
 
 #最小延迟时间（单位：秒）
