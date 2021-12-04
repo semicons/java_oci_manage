@@ -140,7 +140,7 @@ key_file=写你的密钥文件路径
 
 
 
-#### 其他帮助
+#### 其他帮助常见问题
 - Q:tg频道?
 - A:https://t.me/agentONE_R  (关注后点击频道名字可以进行讨论或求助)
 - 
@@ -152,6 +152,9 @@ key_file=写你的密钥文件路径
 - 
 - Q:Unable to locate package openjdk***？
 - A:请谷歌搜索centos(对应系统)8(对应版本)如何安装openjdk8
+- 
+- Q:返回500 Out of host capacity？
+- A:抢机和升配正常返回
 
 #### 更新日志
 <details>
