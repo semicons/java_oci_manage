@@ -103,7 +103,7 @@ vpsName=""
 
 
 #非必填项
-#tg bot token
+#tg bot token （不知道怎么获取搜索telegram 创建bot）
 bot_key=""
 
 #用户id （可以通过机器人 User ID Bot 获取）
