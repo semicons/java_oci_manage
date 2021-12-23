@@ -45,17 +45,17 @@
 
 ## 1.文件说明（**请仔细从上往下阅读文档，你将毫无疑问**）
 ```text
-│  sh_client_bot.sh       # 脚本文件 内置参数可修改 bash sh_java_oci.sh执行 
+│  sh_client_bot.sh       # 脚本文件
 │  r_client.jar   # 程序主文件 需要跟 脚本文件在同一个目录
    client_config  #配置文件 需跟主程序在同一目录
 ```
 
-#### 2. ①Linux一键部署或更新（运行完后使用bash sh_java_oci.sh可再次运行）
+#### 2. ①Linux一键部署/更新（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
-rm -rf r_client.tar.gz sh_client_bot.sh jar_oci_manage.jar && wget -O linux-oci-semicons.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/linux-oci-semicons.tar.gz && tar -zxvf linux-oci-semicons.tar.gz && chmod +x sh_java_oci.sh
+wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/r_client && tar -zxvf r_client.tar.gz --keep-old-files client_config  && chmod +x sh_client_bot.sh
 ```
 
-#### ②、手动安装
+#### ②手动安装
 ```text
   1）下载压缩包 解压文件 tar -zxvf xxx.tar.gz 
   2）sudo chmod +x sh_client_bot.sh
