@@ -64,11 +64,12 @@ wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/dow
 ```text
 如何运行？
 请先在配置文件内输入对应的参数，然后运行下方需要的指令
-
+需要开启默认9527端口
 bash sh_client_bot.sh （正常前台运行指令）
 screen -S sh_client_bot bash sh_java_oci.sh （后台运行指令，使用指令后可关闭窗口）
 screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后台运行）
 脚本支持传参 bash sh_client_bot.sh 8888  更换默认9527端口
+显示 服务已启动成功... 代表客户端已成功启动
 
 
 参数如何设置？
