@@ -52,11 +52,11 @@
 
 #### 2. ①Linux一键部署/更新(暂未开通)（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
-wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/r_client.tar.gz && tar -zxvf r_client.tar.gz --keep-old-files client_config  && chmod +x sh_client_bot.sh
+wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/r_client.tar.gz && tar -zxvf r_client.tar.gz --skip-old-files client_config  && chmod +x sh_client_bot.sh
 ```
 体验版如下
 ```bash
-wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/download/v2.0.0.1/r_client.tar.gz && tar -zxvf r_client.tar.gz --keep-old-files client_config  && chmod +x sh_client_bot.sh
+wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/download/v2.0.0.1/r_client.tar.gz && tar -zxvf r_client.tar.gz --skip-old-files client_config  && chmod +x sh_client_bot.sh
 ```
 
 #### ②手动安装
