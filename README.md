@@ -41,7 +41,7 @@
 * [ ] 上传API快捷操作
 * [ ] 定制功能请TG频道留言
 
-# 此处为客户端配置说明,全流程说明请关注bot /help 获取
+# 此处为客户端配置说明,全流程说明请关注bot https://t.me/radiance_helper_bot /help 获取
 
 ## 1.文件说明（**请仔细从上往下阅读文档，你将毫无疑问**）
 ```text
@@ -52,11 +52,11 @@
 
 #### 2. ①Linux一键部署/更新(暂未开通)（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
-wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/r_client.tar.gz && tar -zxvf r_client.tar.gz --skip-old-files client_config  && chmod +x sh_client_bot.sh
+
 ```
 体验版如下
 ```bash
-
+wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/v2.0.0.1/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh
 ```
 
 #### ②手动安装
