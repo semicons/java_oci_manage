@@ -56,7 +56,7 @@ wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/dow
 ```
 体验版如下
 ```bash
-wget -O r_client.tar.gz https://github.com/semicons/java_oci_manage/releases/download/v2.0.0.1/r_client.tar.gz && tar -zxvf r_client.tar.gz --skip-old-files client_config  && chmod +x sh_client_bot.sh
+
 ```
 
 #### ②手动安装
