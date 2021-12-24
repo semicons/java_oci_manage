@@ -81,7 +81,7 @@ screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后
 username 和 password对应填写
 ```
 ##### 4. 编辑配置参数
-- 编辑脚本文件 sh_java_oci.sh 或复制下面参数到自定义文档
+- 编辑client_config文件
 ```text
 
 #在oci=begin和oci=end之间放入你的API配置信息
@@ -96,7 +96,7 @@ key_file=写你的API密钥文件路径
 
 oci=end
 
-#用户信息 从 配置
+#用户信息 从 https://t.me/radiance_helper_bot 配置
 username=
 password=
 
