@@ -23,7 +23,7 @@
 - [Windows]需自行配置jdk环境变量运行
 
 ## 已实现功能
-* [x] 开机(amd和刷arm 支持root开机)
+* [x] 开机(amd和刷arm intel 支持root开机)
 * [x] 一键查询和更改ip
 * [x] 修改硬盘大小和性能
 * [x] 升级、降级实例、修改实例名称、打开/关闭实例监控
@@ -72,7 +72,7 @@ wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releas
 bash sh_client_bot.sh （正常前台运行指令）
 screen -S sh_client_bot bash sh_client_bot.sh （后台运行指令，使用指令后可关闭窗口）
 screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后台运行）
-脚本支持传参 bash sh_client_bot.sh 8888  更换默认9527端口
+脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口
 显示 服务已启动成功... 代表客户端已成功启动
 
 
@@ -80,7 +80,7 @@ screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后
 请在client_config文件 oci=begin  oci=end 中间放入oracle API参数
 username 和 password对应填写
 ```
-##### 4. 编辑配置参数
+##### 4. 编辑配置参数(支持多个)
 - 编辑client_config文件
 ```text
 
