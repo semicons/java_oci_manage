@@ -84,10 +84,24 @@ username 和 password对应填写
 - 编辑client_config文件
 ```text
 
-#在oci=begin和oci=end之间放入你的API配置信息
+#在oci=begin和oci=end之间放入你的API配置信息 支持多个 机器人切换profile可更换操作地区
 oci=begin
 
 [DEFAULT]
+user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
+fingerprint=b8:33:6f:xxxx:45:43:33
+tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
+region=ap-singapore-1
+key_file=写你的API密钥文件路径
+
+[sgo]
+user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
+fingerprint=b8:33:6f:xxxx:45:43:33
+tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
+region=ap-singapore-1
+key_file=写你的API密钥文件路径
+
+[chunchuan]
 user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
