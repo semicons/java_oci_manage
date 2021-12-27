@@ -34,31 +34,41 @@
 * [x] 开放云面板安全组
 * [x] 云账户管理（修改租户名、修改邮箱、添加管理员用户、删除用户、重置密码）（由于甲骨文问题，暂缓开通）
 * [x] bot操作
+* [x] CF快捷操作
+* [x] 上传代理快捷操作
 
 ## 正在开发的功能
-* [ ] CF快捷操作
+
 * [ ] 用户使用习惯快捷操作
-* [ ] 上传代理快捷操作
+
 * [ ] 上传API快捷操作
 * [ ] 定制功能请TG频道留言
 
-# 此处为客户端配置说明,全流程说明请关注bot https://t.me/radiance_helper_bot /help 获取
+# 全流程
+```text
+全流程
+如何使用机器人系统？https://t.me/radiance_helper_bot
+①请在先关注频道 https://t.me/agentONE_R
+②https://github.com/semicons/java_oci_manage/ 下载最新版或2.0及以后的版本
+③机器人左下角下角设置你的用户名和密码(或使用/raninfo命令生成随机信息)然后将它放入你客户端的client_config配置文件内
+④甲骨文云配置(查看github第4和第5项)放入配置文件内
+⑤你的客户端服务器需未占用并且放行9527端口,并使用脚本启动客户端服务器
+```
 
-## 1.文件说明（**请仔细从上往下阅读文档，你将毫无疑问**）
+## 客户端服务器配置流程
+
+1.文件说明（**请仔细从上往下阅读本文档，你将毫无疑问**）
 ```text
 │  sh_client_bot.sh       # 脚本文件
 │  r_client.jar   # 程序主文件 需要跟 脚本文件在同一个目录
    client_config  #配置文件 需跟主程序在同一目录
 ```
 
-#### 2. ①Linux一键部署/更新(暂未开通)（运行完后使用bash sh_java_oci.sh可再次运行）
+#### 2. ①Linux一键部署/更新（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
+wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/latest/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh
+```
 
-```
-体验版如下
-```bash
-wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/v2.0.0.1/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh
-```
 
 #### ②手动安装
 ```text
@@ -111,9 +121,23 @@ key_file=写你的API密钥文件路径
 
 oci=end
 
-#用户信息 从 https://t.me/radiance_helper_bot 配置
+#用户信息 从 https://t.me/radiance_helper_bot 配置(bot可使用/raninfo命令随机生成)
+#必传
 username=
+#必传
 password=
+
+#cloudflare 功能参数 非必传
+#非必传 cloudflare邮箱
+cf_email=
+#非必传 cloudflare key 在我的个人资料->API令牌处->API密钥->Global API Key	获取
+cf_account_key=
+
+#非必填 本机ip和端口号 (进阶玩家选项) 不写将自动获取本机ip 并使用默认端口号9527 (小白用户建议不填) 如填写 格式为:http://xxx.xx:9527
+local_address=
+#非必填 url名称(默认为address 可在bot上修改)
+local_url_name=
+
 
 ```
 
