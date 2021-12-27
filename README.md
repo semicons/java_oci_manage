@@ -89,7 +89,7 @@ screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后
 
 参数如何设置？
 请在client_config文件 oci=begin  oci=end 中间放入oracle API参数
-username 和 password对应填写
+username 和 password对应填写  cf功能按需填写  address进阶用户填写
 ```
 ##### 4. 编辑配置参数(支持多个)
 - 编辑client_config文件
