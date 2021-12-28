@@ -44,54 +44,50 @@
 * [ ] 上传API快捷操作
 * [ ] 定制功能请TG频道留言
 
-# 全流程
+# 全流程（bot使用速成教学）
 ```text
-全流程
-如何使用机器人系统？https://t.me/radiance_helper_bot
-1.请在先关注频道 https://t.me/agentONE_R
-2.https://github.com/semicons/java_oci_manage/ 下载最新版(使用一键脚本即可)或2.0及以后的版本
-3.机器人左下角下角设置你的用户名和密码(或使用/raninfo命令生成随机信息)然后将它放入你客户端的client_config配置文件内
-4.甲骨文云配置(查看github第4和第5项)放入配置文件内
-5.你的客户端服务器需未占用并且放行9527端口,并使用脚本启动客户端服务器
+1.请在先关注频道 https://t.me/agentONE_R 和机器人 https://t.me/radiance_helper_bot
+
+2.使用一键部署命令
+
+3.机器人左下角下角使用/raninfo命令生成随机信息，然后将它放入你客户端的client_config配置文件内
+
+4.甲骨文云api配置(获取方式查看额外说明2)放入配置文件内
+
+5.你的客户端服务器需未占用并且放行9527（或全部）端口（可以用telnet ip 端口测试），然后使用脚本启动客户端服务器
 ```
 
-## 客户端服务器配置流程
+## 客户端服务器配置流程（**请仔细从上往下阅读本文档，你将毫无疑问**）
 
-1.文件说明（**请仔细从上往下阅读本文档，你将毫无疑问**）
-```text
-│  sh_client_bot.sh       # 脚本文件 跟以下文件在同一个目录
-│  r_client.jar   # 程序主文件 需要跟 脚本文件在同一个目录
-   client_config  #配置文件 需跟主程序在同一目录
-```
-
-#### 2. ①Linux一键部署/更新（运行完后使用bash sh_java_oci.sh可再次运行）
+#### 1.Linux一键部署/更新（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
 wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/latest/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh
 ```
-
-
-#### ②手动安装
-```text
-  1）下载压缩包 解压文件 tar -zxvf xxx.tar.gz 
-  2）sudo chmod +x sh_client_bot.sh
-```
-##### 3. 使用说明
+##### 2. 使用说明
 ```text
 如何运行？
 请先在配置文件内输入对应的参数，然后运行下方需要的指令
 需要开启默认9527端口
+
 bash sh_client_bot.sh （正常前台运行指令）
+
 screen -S sh_client_bot bash sh_client_bot.sh （后台运行指令，使用指令后可关闭窗口）
+
 screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后台运行）
+
 脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口
 显示 服务已启动成功... 代表客户端已成功启动
 
 
 参数如何设置？
 请在client_config文件 oci=begin  oci=end 中间放入oracle API参数
-username 和 password对应填写  cf功能按需填写  address进阶用户填写
+
+username 和 password对应填写 
+
+cf功能按需填写 
+address进阶用户填写
 ```
-##### 4. 编辑配置参数(支持多个)
+##### 3. 编辑配置参数(支持多个)
 - 编辑client_config文件
 ```text
 
@@ -137,11 +133,17 @@ cf_account_key=
 local_address=
 #非必填 url名称(默认为address 可在bot上修改)
 local_url_name=
-
-
 ```
 
-##### 5. 甲骨文后台获取API参数
+
+##### 额外说明 1.文件说明
+```text
+│  sh_client_bot.sh       # 脚本文件 跟以下文件在同一个目录
+│  r_client.jar   # 程序主文件 需要跟 脚本文件在同一个目录
+   client_config  #配置文件 需跟主程序在同一目录
+```
+##### 额外说明 2.甲骨文后台获取API参数
+```
 - 【操作导航，任意一种均可】
 - 1.甲骨文后台=>用户设置>>资源>>API秘钥>>添加API秘钥->(在指纹右侧三个点处查看参数)
 - 2.如没有用户设置的请直接搜用户(切中文语言) 点击选择某个用户名 API秘钥>>添加API秘钥->(在指纹右侧三个点处查看参数)
