@@ -180,6 +180,12 @@ key_file=写你的密钥文件路径
 -
 - ConnectionException:Failed to connect to xxx.xxx
 - 请仔仔细细检查端口是否开放 telnet ip 端口
+- 
+- Q:返回500 Out of host capacity？
+- A:抢机和升配正常返回
+
+
+
 
 
 
