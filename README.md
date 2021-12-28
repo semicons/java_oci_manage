@@ -48,18 +48,18 @@
 ```text
 全流程
 如何使用机器人系统？https://t.me/radiance_helper_bot
-①请在先关注频道 https://t.me/agentONE_R
-②https://github.com/semicons/java_oci_manage/ 下载最新版或2.0及以后的版本
-③机器人左下角下角设置你的用户名和密码(或使用/raninfo命令生成随机信息)然后将它放入你客户端的client_config配置文件内
-④甲骨文云配置(查看github第4和第5项)放入配置文件内
-⑤你的客户端服务器需未占用并且放行9527端口,并使用脚本启动客户端服务器
+1.请在先关注频道 https://t.me/agentONE_R
+2.https://github.com/semicons/java_oci_manage/ 下载最新版或2.0及以后的版本
+3.机器人左下角下角设置你的用户名和密码(或使用/raninfo命令生成随机信息)然后将它放入你客户端的client_config配置文件内
+4.甲骨文云配置(查看github第4和第5项)放入配置文件内
+5.你的客户端服务器需未占用并且放行9527端口,并使用脚本启动客户端服务器
 ```
 
 ## 客户端服务器配置流程
 
 1.文件说明（**请仔细从上往下阅读本文档，你将毫无疑问**）
 ```text
-│  sh_client_bot.sh       # 脚本文件
+│  sh_client_bot.sh       # 脚本文件 跟以下文件在同一个目录
 │  r_client.jar   # 程序主文件 需要跟 脚本文件在同一个目录
    client_config  #配置文件 需跟主程序在同一目录
 ```
