@@ -49,7 +49,7 @@
 全流程
 如何使用机器人系统？https://t.me/radiance_helper_bot
 1.请在先关注频道 https://t.me/agentONE_R
-2.https://github.com/semicons/java_oci_manage/ 下载最新版或2.0及以后的版本
+2.https://github.com/semicons/java_oci_manage/ 下载最新版(使用一键脚本即可)或2.0及以后的版本
 3.机器人左下角下角设置你的用户名和密码(或使用/raninfo命令生成随机信息)然后将它放入你客户端的client_config配置文件内
 4.甲骨文云配置(查看github第4和第5项)放入配置文件内
 5.你的客户端服务器需未占用并且放行9527端口,并使用脚本启动客户端服务器
