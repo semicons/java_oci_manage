@@ -61,31 +61,7 @@
 ```bash
 wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/latest/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh
 ```
-##### 2. 使用说明
-```text
-如何运行？
-请先在配置文件内输入对应的参数，然后运行下方需要的指令
-需要开启默认9527端口
-
-bash sh_client_bot.sh （正常前台运行指令）
-
-screen -S sh_client_bot bash sh_client_bot.sh （后台运行指令，使用指令后可关闭窗口）
-
-screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后台运行）
-
-脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口
-显示 服务已启动成功... 代表客户端已成功启动
-
-
-参数如何设置？
-请在client_config文件 oci=begin  oci=end 中间放入oracle API参数
-
-username 和 password对应填写 
-
-cf功能按需填写 
-address进阶用户填写
-```
-##### 3. 编辑配置参数(支持多个)
+#### 2. 编辑配置参数(支持多个)
 - 编辑client_config文件
 ```text
 
@@ -132,6 +108,32 @@ local_address=
 #非必填 url名称(默认为address 可在bot上修改)
 local_url_name=
 ```
+
+#### 3. 使用说明
+```text
+如何运行？
+请先在配置文件内输入对应的参数，然后运行下方需要的指令
+需要开启默认9527端口
+
+bash sh_client_bot.sh （正常前台运行指令）
+
+screen -S sh_client_bot bash sh_client_bot.sh （后台运行指令，使用指令后可关闭窗口）
+
+screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后台运行）
+
+脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口
+显示 服务已启动成功... 代表客户端已成功启动
+
+
+参数如何设置？
+请在client_config文件 oci=begin  oci=end 中间放入oracle API参数
+
+username 和 password对应填写 
+
+cf功能按需填写 
+address进阶用户填写
+```
+
 
 
 ##### 额外说明 1.文件说明
