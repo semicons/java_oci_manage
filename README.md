@@ -1,6 +1,6 @@
 
 # <p align="center">oci-bot⭐</p>
-<p align="center">暂未开源，介意请勿使用，谢谢✅</P>
+<p align="center">暂未开源，介意请千万勿使用，谢谢</P>
 <p align="center">特殊声明:本系统为双端制，机器人不存任何敏感数据，API私钥在你的客户端服务器本地，由bot驱动你的客户端操作，你可以随时关闭服务</P>
 
 ## 免责声明
@@ -40,7 +40,6 @@
 ## 正在开发的功能
 
 * [ ] 用户使用习惯快捷操作
-
 * [ ] 上传API快捷操作
 * [ ] 定制功能请TG频道留言
 
@@ -48,7 +47,7 @@
 ```text
 1.请在先关注频道 https://t.me/agentONE_R 和机器人 https://t.me/radiance_helper_bot
 
-2.使用一键部署命令
+2.使用客户端一键部署命令
 
 3.机器人左下角下角使用/raninfo命令生成随机信息，然后将它放入你客户端的client_config配置文件内，同时将甲骨文云API配置(获取方式查看额外说明2)放入配置文件内
 
@@ -61,7 +60,7 @@
 ```bash
 wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/latest/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh
 ```
-#### 2. 编辑配置参数(支持多个)
+#### 2. 参考配置文件参数(支持多个)
 - 编辑client_config文件
 ```text
 
