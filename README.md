@@ -43,7 +43,7 @@
 * [ ] 上传API快捷操作
 * [ ] 定制功能请TG频道留言
 
-# 全流程（bot速成教学）
+# 全流程（bot速用教学）
 ```text
 1.请在先关注频道 https://t.me/agentONE_R 和机器人 https://t.me/radiance_helper_bot
 
