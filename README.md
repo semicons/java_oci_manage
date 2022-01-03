@@ -121,7 +121,7 @@ screen -S sh_client_bot bash sh_client_bot.sh （后台运行指令，使用指�
 
 screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后台运行）
 
-脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口
+脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口 同时需填写local_address
 显示 服务已启动成功... 代表客户端已成功启动
 
 
