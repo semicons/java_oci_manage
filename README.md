@@ -180,8 +180,8 @@ key_file=写你的密钥文件路径
 - 已经关注了还是提示【您还未关注频道，请关注频道并设置用户名后再操作】
 - 请退出频道5秒后，重新关注
 -
-- ConnectionException:Failed to connect to xxx.xxx
-- 请仔仔细细检查端口是否开放 telnet ip 端口
+- ConnectionException:Failed to connect to xxx.xxx 或 java.net.NoRouteToHostException: No route to host (Host unreachable)
+- 请仔仔细细检查端口是否开放 另一个机器 telnet ip 端口 或使用网站端口扫描你的端口
 - 
 - Q:返回500 Out of host capacity？
 - A:抢机和升配正常返回
