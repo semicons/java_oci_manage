@@ -1,5 +1,5 @@
 
-# <p align="center">oci-bot⭐</p>
+# <p align="center">R-Bot⭐</p>
 <p align="center">暂未开源，介意请千万勿使用，谢谢</P>
 <p align="center">特殊声明:本系统为双端制，机器人不存任何敏感数据，API私钥在你的客户端服务器本地，由bot驱动你的客户端操作，你可以随时关闭服务</P>
 
