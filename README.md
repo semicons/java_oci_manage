@@ -103,7 +103,7 @@ cf_email=
 #非必传 cloudflare key 在我的个人资料->API令牌处->API密钥->Global API Key	获取
 cf_account_key=
 
-#非必填 本机ip和端口号 (进阶玩家选项) 不写将自动获取本机ip 并使用默认端口号9527 (小白用户建议不填) 如填写 格式为:http://xxx.xx:9527
+#非必填 本机ip和端口号 (进阶玩家选项 可填写域名) 不写将自动获取本机ip 并使用默认端口号9527 (小白用户建议不填) 如填写 格式为:http://xxx.xx:9527
 local_address=
 #非必填 url名称(默认为address 可在bot上修改)
 local_url_name=
