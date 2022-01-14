@@ -18,9 +18,9 @@
 
 ## 环境
 
-- [JDK] 1.8
+- [JDK] 11
 
-- [LINUX] Ubuntu20.04(已测试).Debian(未测试，但是应该可以).Centos(需手动安装jdk8)
+- [LINUX] Ubuntu20.04(已测试).Debian(未测试，但是应该可以).Centos(需手动安装jdk11)
 - [Windows]未适配
 
 ## 已实现功能
