@@ -65,7 +65,7 @@ wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releas
 - 编辑client_config文件
 ```text
 
-#在oci=begin和oci=end之间放入你的API配置信息 支持多个配置文件 机器人切换profile可更换操作配置
+#在oci=begin和oci=end之间放入你的API配置信息 支持多个配置文件(注意[]内不支持中文) 机器人切换profile可更换操作配置
 oci=begin
 
 [DEFAULT]
