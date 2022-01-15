@@ -115,7 +115,7 @@ ps -ef | grep r_client.jar | grep -v grep | awk '{print $2}' | xargs kill -9 (�
 
 脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口 同时需填写local_address
 
-显示 服务已启动成功... 代表客户端已成功启动
+使用命令查看日志 显示 服务已启动成功... 代表客户端已成功启动 可以使用bot进行你需要的操作了
 
 
 参数如何设置？
