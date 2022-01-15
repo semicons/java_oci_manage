@@ -65,7 +65,7 @@ wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releas
 - 编辑client_config文件
 ```text
 
-#在oci=begin和oci=end之间放入你的API配置信息 支持多个 机器人切换profile可更换操作地区
+#在oci=begin和oci=end之间放入你的API配置信息 支持多个配置文件 机器人切换profile可更换操作配置
 oci=begin
 
 [DEFAULT]
@@ -75,14 +75,7 @@ tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
 key_file=写你的API密钥文件路径
 
-[sgo]
-user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
-fingerprint=b8:33:6f:xxxx:45:43:33
-tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
-region=ap-singapore-1
-key_file=写你的API密钥文件路径
-
-[chunchuan]
+[DEFAULT2]
 user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
@@ -114,13 +107,14 @@ local_url_name=
 如何运行？
 请先在配置文件内输入对应的参数，然后运行下方需要的指令(需要开启默认9527端口)
 
-bash sh_client_bot.sh （正常前台运行指令）
+bash sh_client_bot.sh （启动）
 
-screen -S sh_client_bot bash sh_client_bot.sh （后台运行指令，使用指令后可关闭窗口）
+tail -f r_client_log.log  (实时查看日志,ctrl + c退出日志)
 
-screen -r sh_client_bot （查看后台程序运行详细  可ctrl + c 取消后台运行）
+ps -ef | grep r_client.jar | grep -v grep | awk '{print $2}' | xargs kill -9 (终止进程)
 
 脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口 同时需填写local_address
+
 显示 服务已启动成功... 代表客户端已成功启动
 
 
