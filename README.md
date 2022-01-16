@@ -59,7 +59,7 @@
 
 #### 1.Linux一键部署/更新（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
-wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/latest/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh
+wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/latest/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh && bash sh_client_bot.sh
 ```
 #### 2. 参考配置文件参数(支持多个)
 - 编辑client_config文件
