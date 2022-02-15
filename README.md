@@ -161,7 +161,7 @@ key_file=写你的密钥文件路径
 
 #### 其他帮助常见问题
 - Q:tg频道?
-- A:https://t.me/agentONE_R (频道)   https://t.me/apchyo(群)
+- A:https://t.me/agentONE_R (频道)   https://t.me/apchyo (群)
 - 
 - Q:错误 Caused by: java.io.FileNotFoundException: /root/.oci/oci_api_key.pem # TODO (没有那个文件或目录) 
 - A:删除后面的# TODO
@@ -170,7 +170,7 @@ key_file=写你的密钥文件路径
 - A:使用生成公钥的时候对应的私钥登录
 - 
 - Q:Unable to locate package openjdk***？
-- A:请谷歌搜索centos(对应系统)8(对应系统版本)如何安装openjdk8
+- A:请谷歌搜索centos(对应系统)11(对应系统版本)如何安装openjdk11
 - 
 - 已经关注了还是提示【您还未关注频道，请关注频道并设置用户名后再操作】
 - 请退出频道5秒后，重新关注
