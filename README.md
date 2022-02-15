@@ -162,6 +162,8 @@ key_file=写你的密钥文件路径
 #### 其他帮助常见问题
 - Q:tg频道?
 - A:https://t.me/agentONE_R  (关注后点击频道名字可以进行讨论或求助)
+-
+- https://t.me/apchyo
 - 
 - Q:错误 Caused by: java.io.FileNotFoundException: /root/.oci/oci_api_key.pem # TODO (没有那个文件或目录) 
 - A:删除后面的# TODO
