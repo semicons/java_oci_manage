@@ -49,15 +49,15 @@
 
 2.使用客户端一键部署命令
 
-3.机器人使用/raninfo命令生成随机信息，然后将它放入你客户端的client_config配置文件内，同时将甲骨文云API配置(获取方式查看额外说明2)放入配置文件内
+3.机器人使用/raninfo命令生成随机信息，然后将它放入你客户端的client_config(执行完一键命令后当前路径就有这个文件)配置文件内，同时将甲骨文云API配置(获取方式查看额外说明2)放入配置文件内
 
-4.你的客户端服务器需未占用并且放行9527（或全部）端口，然后使用bash sh_client_bot.sh的启动客户端服务器。结束！可以使用bot了！
+4.使用bash sh_client_bot.sh的启动客户端服务器,然后需放行9527（或放行全部）端口  （可以用 tool.chinaz.com/port 测试端口是否开放）。结束！可以使用bot了！
 
 ```
 
 ### 以下为客户端服务器配置流程
 
-#### 1.Linux一键部署/更新（运行完后使用bash sh_java_oci.sh可再次运行）
+#### 1.Linux一键部署/更新（运行完后使用bash sh_java_oci.sh可重启运行）
 ```bash
 wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/download/latest/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh && bash sh_client_bot.sh
 ```
@@ -107,7 +107,7 @@ local_url_name=
 如何运行？
 请先在配置文件内输入对应的参数，然后运行下方需要的指令(需要开启默认9527端口)
 
-bash sh_client_bot.sh （启动）
+bash sh_client_bot.sh （启动或重启）
 
 tail -f log_r_client.log  (实时查看日志,ctrl + c退出日志)
 
@@ -176,7 +176,7 @@ key_file=写你的密钥文件路径
 - 请退出频道5秒后，重新关注
 -
 - ConnectionException:Failed to connect to xxx.xxx 或 java.net.NoRouteToHostException: No route to host (Host unreachable)
-- 请仔仔细细检查端口是否开放 另一个机器 telnet ip 端口 或使用网站端口扫描你的端口
+- 请仔仔细细检查端口是否开放 可以使用 tool.chinaz.com/port 测试
 - 
 - Q:返回500 Out of host capacity？
 - A:抢机和升配正常返回
