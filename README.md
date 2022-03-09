@@ -50,11 +50,11 @@
 ```text
 1.请在先关注频道 https://t.me/agentONE_R 和机器人 https://t.me/radiance_helper_bot
 
-2.使用客户端一键部署命令
+2.使用客户端一键部署/更新命令
 
-3.机器人使用/raninfo命令生成随机信息，然后将它放入你客户端的client_config(执行完一键命令后当前路径就有这个文件)配置文件内，同时将甲骨文云API配置(获取方式查看额外说明2)放入(或用机器人上传)配置文件内
+3.机器人使用/raninfo命令生成随机信息，然后将它放入你客户端的client_config(执行完一键命令后当前路径就有这个文件)配置文件内，同时将甲骨文云API配置(获取配置查看额外说明2)放入配置文件内(或用机器人上传配置)
 
-4.使用bash sh_client_bot.sh的启动客户端服务器,然后需放行9527（或放行全部）端口  （可以用 tool.chinaz.com/port 测试端口是否开放）。结束！可以使用bot了！
+4.使用 bash sh_client_bot.sh 启动客户端服务器,然后需放行9527（或放行全部）端口  （可以用 tool.chinaz.com/port 测试端口是否开放）。结束！可以使用bot了！
 
 ```
 
@@ -99,7 +99,7 @@ cf_email=
 #非必传 cloudflare key 在我的个人资料->API令牌处->API密钥->Global API Key	获取
 cf_account_key=
 
-#非必填 本机ip和端口号 (进阶玩家选项 可填写域名) 不写将自动获取本机ip 并使用默认端口号9527 (小白用户建议不填) 如填写 格式为:http://xxx.xx:9527
+#非必填 本机ip和端口号 (进阶玩家选项 可填写域名) 不写将自动获取本机ip 并使用默认端口号9527 (小白用户建议不填) 如填写 格式为:https://xxx.xx:9527
 local_address=
 #非必填 url名称(默认为address 可在bot上修改)
 local_url_name=
