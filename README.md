@@ -56,8 +56,8 @@
 3.机器人使用/raninfo命令生成随机信息，然后将它放入你客户端的client_config(执行完一键命令后刷新当前路径就有这个文件)配置文件内，同时将甲骨文云API配置(获取配置查看额外说明2)放入配置文件内(或用机器人上传配置)
 
 4.使用 bash sh_client_bot.sh 启动客户端服务器,然后需放行9527（或放行全部）端口  （可以用 tool.chinaz.com/port 测试端口是否开放）。结束！可以使用bot了！
-
 ```
+### [戳此处查看机器人使用指南](https://github.com/semicons/java_oci_manage/blob/main/BOT-README.md)
 
 ### 以下为客户端服务器配置流程
 
