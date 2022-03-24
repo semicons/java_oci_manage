@@ -72,7 +72,7 @@
 
 ### 2. 查看/更换ip
 
-当前账户可进行更换ip
+当前账户进行更换ip，可以快速将oracle机器ip分配给cloudflare托管的域名，需要提前将cloudflare的邮箱和密钥填入配置文件内，cloudflare key 在我的个人资料->API令牌处->API密钥->Global API Key	获取，可以在更换ip的同时对ip所绑定的域名进行更新 达到伪ddns的功能
 
 ### 3. 查看/修改磁盘
 
@@ -102,9 +102,9 @@
 
 使用此命令可以对客户端某个profile添加http代理请求从而不使用客户端ip
 
-### 10.C F快捷绑定域名
+### 10. 执行shell
 
-可以快速将oracle机器ip分配给cloudflare托管的域名，需要提前将cloudflare的邮箱和密钥填入配置文件内，cloudflare key 在我的个人资料->API令牌处->API密钥->Global API Key	获取
+在当前客户端服务上执行命令并的功能
 
 ### 11. 切换profile
 
