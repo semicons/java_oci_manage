@@ -59,7 +59,7 @@
 
 3.使用客户端一键部署/更新命令 (如已部署可使用 bash sh_client_bot.sh 重新启动)
 
-4.放行9527（或放行全部）端口  （可以用 tool.chinaz.com/port 测试端口是否开放）。结束！可以使用bot了！
+4.放行9527端口（使用本地模式不需要端口）  （可以用 tool.chinaz.com/port 测试端口是否开放）。结束！可以使用bot了！
 ```
 ### [戳此处查看机器人使用指南](https://github.com/semicons/java_oci_manage/blob/main/BOT-README.md)
 
