@@ -168,6 +168,10 @@ key_file=写你的密钥文件路径
 - 将在甲骨文用户设置添加api密钥的配置文件预览里面的参数 放入到client_config配置文件内(请注意 key_file的私钥位置要正确，【私钥文件】在你添加api的时候生成下载的，然后放入你想放的位置，如：key_file=/root/oci/oci_api_key.pem)
 - ![image](https://github.com/semicons/java_oci_manage/blob/main/1646021119866.jpg)
 
+##### 额外说明 3.卸载软件？
+rm -rf gz_client_bot.tar.gz client_config r_client.jar sh_client_bot.sh log_r_client.log debug-*.log
+如也不需要JDK可卸载：apt-get remove openjdk*
+
 
 
 #### 其他帮助常见问题
