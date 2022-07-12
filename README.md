@@ -118,15 +118,22 @@ model=
 如何运行？
 请先在配置文件内输入对应的参数，然后运行下方需要的指令(需要开启默认9527端口)
 
-bash sh_client_bot.sh （启动或重启）
+（启动或重启）脚本支持传参 如：bash sh_client_bot.sh 9999  。则更换默认9527端口到9999端口 同时需填写配置文件内local_address
+bash sh_client_bot.sh 
 
-tail -f log_r_client.log  (实时查看日志,ctrl + c退出日志)
+(实时查看日志,ctrl + c退出日志)
+tail -f log_r_client.log  
 
-ps -ef | grep r_client.jar | grep -v grep | awk '{print $2}' | xargs kill -9 (终止进程)
+(终止进程)
+ps -ef | grep r_client.jar | grep -v grep | awk '{print $2}' | xargs kill -9  
 
-脚本支持传参 bash sh_client_bot.sh 9999  更换默认9527端口到9999端口 同时需填写local_address
+（卸载软件）
+rm -rf gz_client_bot.tar.gz client_config r_client.jar sh_client_bot.sh log_r_client.log debug-.log 
+如也不需要JDK可卸载：apt-get remove openjdk
 
+（启动成功）
 使用查看日志命令查看日志 显示 服务已启动成功... 代表客户端已成功启动 可以使用bot进行你需要的操作了
+
 
 
 参数如何设置？
@@ -167,10 +174,6 @@ key_file=写你的密钥文件路径
 ```
 - 将在甲骨文用户设置添加api密钥的配置文件预览里面的参数 放入到client_config配置文件内(请注意 key_file的私钥位置要正确，【私钥文件】在你添加api的时候生成下载的，然后放入你想放的位置，如：key_file=/root/oci/oci_api_key.pem)
 - ![image](https://github.com/semicons/java_oci_manage/blob/main/1646021119866.jpg)
-
-##### 额外说明 3.卸载软件？
-rm -rf gz_client_bot.tar.gz client_config r_client.jar sh_client_bot.sh log_r_client.log debug-*.log
-如也不需要JDK可卸载：apt-get remove openjdk*
 
 
 
