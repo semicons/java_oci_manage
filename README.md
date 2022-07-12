@@ -115,24 +115,23 @@ model=
 
 #### 3. 使用说明
 ```text
-如何运行？
 请先在配置文件内输入对应的参数，然后运行下方需要的指令(需要开启默认9527端口)
 
-（启动或重启）脚本支持传参 如：bash sh_client_bot.sh 9999  。则更换默认9527端口到9999端口 同时需填写配置文件内local_address
+如何启动或重启？
 bash sh_client_bot.sh 
 
-(实时查看日志,ctrl + c退出日志)
+如何查看日志？(ctrl + c退出日志)
 tail -f log_r_client.log  
 
-(终止进程)
+如何终止程序？
 ps -ef | grep r_client.jar | grep -v grep | awk '{print $2}' | xargs kill -9  
 
-（卸载软件）
+如何卸载程序？
 rm -rf gz_client_bot.tar.gz client_config r_client.jar sh_client_bot.sh log_r_client.log debug-.log 
-如也不需要JDK可卸载：apt-get remove openjdk
+如也不需要JDK可卸载：apt-get remove openjdk*
 
-（启动成功）
-使用查看日志命令查看日志 显示 服务已启动成功... 代表客户端已成功启动 可以使用bot进行你需要的操作了
+如何判断是否启动?
+使用查看日志命令查看日志 没有错误显示并且提示服务已启动成功... 代表客户端已成功启动 可以使用bot进行你需要的操作了
 
 
 
