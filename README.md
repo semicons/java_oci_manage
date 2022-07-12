@@ -175,7 +175,6 @@ key_file=写你的密钥文件路径
 - ![image](https://github.com/semicons/java_oci_manage/blob/main/1646021119866.jpg)
 
 
-
 #### 其他帮助常见问题
 - Q:tg频道?
 - A:https://t.me/agentONE_R (频道)   https://t.me/apchyo (群)
@@ -197,6 +196,9 @@ key_file=写你的密钥文件路径
 - 
 - Q:返回500 Out of host capacity？
 - A:抢机和升配正常返回
+- 
+- Q:如何删除旧客户端链接或不用的链接？
+- A:键盘找到【切换客户端】选项进去删除
 
 
 
