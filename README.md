@@ -60,7 +60,7 @@
 
 2.机器人使用/raninfo命令生成随机信息，然后将它放入你客户端的client_config(执行完一键命令后刷新当前路径就有这个文件)配置文件内，同时将甲骨文云API配置(获取配置查看额外说明2)放入配置文件内(或用机器人上传配置)
 
-4.放行9527端口（可以用 tool.chinaz.com/port 测试端口是否开放，如使用本地模式可忽略）bash sh_client_bot.sh 重新启动机器人！结束！可以使用bot了！
+4.脚本自带尝试开启9527端口功能 如未开启可手动开启端口 可以用 tool.chinaz.com/port 测试端口是否开放，如使用本地模式可忽略开端口操作 bash sh_client_bot.sh 重新启动机器人！结束！可以使用bot了！
 ```
 ### [戳此处查看机器人使用指南](https://github.com/semicons/java_oci_manage/blob/main/BOT-README.md)
 
@@ -116,7 +116,7 @@ model=
 
 #### 3. 使用说明
 ```text
-请先在配置文件内输入对应的参数，然后运行下方需要的指令(需要开启默认9527端口)
+请先在配置文件内输入对应的参数，然后运行下方需要的指令
 
 如何启动或重启？
 bash sh_client_bot.sh 
