@@ -110,6 +110,16 @@ local_address=
 #非必填 url名称(默认为address 可在bot上修改)
 local_url_name=
 
+#在azure=begin和azure=end之间放入你的azure的API配置信息 支持多个配置文件 机器人切换profile可更换操作配置
+azure=begin
+
+[az001]
+appId=551xxxx7-xxxx-xxxx-xxxx-b9xxxx60cc65
+password=T618Q~.LIy_xxxxx~jm~xxxxxx
+tenant=xxxx3713-xxxx-4cb5-xxxx-3001060xxxxx
+
+azure=end
+
 #非必填 启动模式 填写local为启动本地无公网IP模式(只要能联网即可) 不填或填其他 则启动端口模式
 model=
 ```
