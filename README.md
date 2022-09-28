@@ -128,7 +128,7 @@ model=
 
 
 
-#在azure=begin和azure=end之间放入你的azure的API配置信息 支持多个配置文件 机器人切换profile可更换操作配置 上传配置支持使用原格式({"appId":"xxx"})上传 
+#在azure=begin和azure=end之间放入你的azure的API配置信息 支持多个配置文件 机器人切换profile可更换操作配置 上传配置支持使用原格式({"appId":"xxx","password":"xxx"...})上传 
 azure=begin
 
 [az001]
