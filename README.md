@@ -1,4 +1,3 @@
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=semicons)](https://github.com/anuraghazra/github-readme-stats)
 # <p align="center">R-Bot⭐</p>
 <p align="center">暂未开源，介意请千万勿使用，谢谢</P>
 <p align="center">用途:本系统目前应用于甲骨文云/azure云的一些快捷操作</P>
