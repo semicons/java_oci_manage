@@ -86,7 +86,7 @@
 
 4.脚本自带尝试开启9527端口功能 如未开启可手动开启端口 可以用 tool.chinaz.com/port 测试端口是否开放，如使用本地模式可忽略开端口操作 bash sh_client_bot.sh 重新启动机器人！结束！可以使用bot了！
 ```
-### [机器人指令说明](https://github.com/semicons/java_oci_manage/blob/main/BOT-README.md)
+### [机器人指令说明](https://github.com/semicons/java_oci_manage/blob/main/md/BOT-README.md)
 
 ### 以下为客户端服务器配置流程
 
