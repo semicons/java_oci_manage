@@ -7,22 +7,22 @@
  <img src="https://img.shields.io/github/forks/semicons/java_oci_manage.svg?style=flat-square&label=Forks&logo=github"/>
 </p>
 
-### 用途
-
+### 前言
 > 本系统目前应用于甲骨文云/azure云的一些快捷操作。
 > 
-### 特殊声明
+### 声明
 > 
 > 本系统为双端制，机器人不存储任何敏感数据。
 > 
 > API私钥在你的客户端服务器本地，由bot驱动你的客户端操作，你可以随时关闭服务。
 > 
 > 介意请千万勿使用，谢谢。
-
-### 免责声明
+>
+> 免责条款
+> 
 > 本仓库发布的项目中涉及的任何脚本，仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
 >
-> 所有使用者在使用项目的任何部分时，需先遵守法律法规。对于一切使用不当所造成的后果，需自行承担.对任何脚本问题概不负责，包括但不限于由任何脚本错误导致的任何损失或损害.
+> 所有使用者在使用项目的任何部分时，需先遵守法律法规。对于一切使用不当所造成的后果，需自行承担。对任何脚本问题概不负责，包括但不限于由任何脚本错误导致的任何损失或损害.
 >
 > 如果任何单位或个人认为该项目可能涉嫌侵犯其权利，则应及时通知并提供身份证明，所有权证明，我们将在收到认证文件后删除相关文件.
 >
@@ -46,20 +46,20 @@
 >
 > ps:使用本地模式则无需开端口
 
+### 说明与帮助
+- [已实现功能](https://github.com/semicons/java_oci_manage/blob/main/md/function.md)
 
-### 查看[已实现功能](https://github.com/semicons/java_oci_manage/blob/main/md/function.md)
+- [机器人命令说明](https://github.com/semicons/java_oci_manage/blob/main/md/BOT-README.md)
 
-### 查看[机器人指令说明](https://github.com/semicons/java_oci_manage/blob/main/md/BOT-README.md)
+- [甲骨文云获取API参数](https://github.com/semicons/java_oci_manage/blob/main/md/oracle.md)
 
-### 查看[甲骨文云获取API参数](https://github.com/semicons/java_oci_manage/blob/main/md/oracle.md)
+- [azure获取API参数](https://github.com/semicons/java_oci_manage/blob/main/md/azure.md)
 
-### 查看[常见问题](https://t.me/agentONE_R/41)
-
-
+- [常见问题](https://t.me/agentONE_R/41)
 
 
 
-#### 更新日志
+### 更新日志
 <details>
 <summary>查看Releases说明</summary>
  
