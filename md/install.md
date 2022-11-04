@@ -1,4 +1,4 @@
-#### 1.Linux一键部署/更新（运行完后使用bash sh_java_oci.sh可重启运行）
+#### 1.Linux一键安装/更新（运行完后使用bash sh_java_oci.sh可重启运行）
 ```bash
 wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/latest/download/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh && bash sh_client_bot.sh
 ```
