@@ -44,6 +44,8 @@
 > ps:程序自带开启9527端口功能，如仍未开启可手动开启端口，[测试网站](https://port.ping.pe) 可测试端口是否开放
 >
 > ps:使用本地模式则无需开端口
+> 
+> ps:脚本支持传参 bash sh_client_bot.sh 8888 更换默认9527端口 同时需填写local_address
 
 ### 说明与帮助
 - [已实现功能](https://github.com/semicons/java_oci_manage/blob/main/md/function.md)
