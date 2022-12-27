@@ -47,6 +47,10 @@
 > 
 > ps:脚本支持传参 bash sh_client_bot.sh 8888 更换默认9527端口 同时需填写local_address
 
+### 卸载
+- rm -rf gz_client_bot.tar.gz client_config r_client.jar sh_client_bot.sh log_r_client.log debug-.log 
+- 如不需要JDK也可卸载：apt remove openjdk*
+
 ### 说明与帮助
 - [已实现功能](https://github.com/semicons/java_oci_manage/blob/main/md/function.md)
 
