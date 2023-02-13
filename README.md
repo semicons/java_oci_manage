@@ -35,7 +35,7 @@
 
 - 【首先】请关注 [频道](https://t.me/agentONE_R) 和 [机器人](https://t.me/radiance_helper_bot)
 
-- 【然后】[安装与配置](https://github.com/semicons/java_oci_manage/blob/main/md/install.md)
+- 【然后】[安装与配置](https://github.com/semicons/java_oci_manage/blob/main/md/install.md)(可选公网模式和本地无公网模式)
 
 - 【其次】机器人使用/raninfo命令生成随机信息，然后将它填入client_config(执行完一键安装命令后产生)配置文件内，同时将甲骨文云API参数放入配置文件内(也可机器人上传API参数)
 
