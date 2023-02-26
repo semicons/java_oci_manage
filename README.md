@@ -45,7 +45,7 @@
 >
 > ps:使用本地模式则无需开端口
 > 
-> ps:脚本支持传参 bash sh_client_bot.sh 8888 更换默认9527端口 同时需填写local_address
+> ps:脚本支持传参 bash sh_client_bot.sh 8888 更换默认9527端口
 
 ### 卸载
 - rm -rf gz_client_bot.tar.gz client_config r_client.jar sh_client_bot.sh log_r_client.log debug-.log 
