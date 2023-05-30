@@ -14,7 +14,7 @@ user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
-key_file=记得写你的密钥文件路径
+key_file=写你的API密钥文件路径 如：/root/rbot/xxx.pem
 ```
 - 将在甲骨文用户设置添加api密钥的配置文件预览里面的参数 放入到client_config配置文件内(请注意 key_file的私钥位置要正确，【私钥文件】在你添加api的时候生成下载或上传的，然后放入你想放的位置，如：key_file=/root/oci/oci_api_key.pem)
 - ![image](https://github.com/semicons/java_oci_manage/blob/main/1646021119866.jpg)
