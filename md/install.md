@@ -14,14 +14,14 @@ user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
-key_file=写你的API密钥文件路径
+key_file=写你的API密钥文件路径 如：/root/rbot/xxx.pem
 
 [DEFAULT2]
 user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
-key_file=写你的API密钥文件路径
+key_file=写你的API密钥文件路径 如：/root/rbot/xxx.pem
 
 oci=end
 
