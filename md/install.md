@@ -6,7 +6,7 @@ wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releas
 #### 2. 修改配置文件参数
 - 按参数说明编辑client_config文件（model填写local为启动本地无公网IP模式）
 ```text
-#在oci=begin和oci=end之间放入你的API配置信息 支持多个配置文件 机器人操作profile管理里可更换操作配置
+#在oci=begin和oci=end之间放入你的API配置信息 支持多个配置文件 机器人操作profile管理里可更换操作账户
 oci=begin
 
 [DEFAULT]
