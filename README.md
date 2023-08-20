@@ -54,7 +54,7 @@
 ### 说明与帮助
 - [已实现功能](https://github.com/semicons/java_oci_manage/blob/main/md/function.md)
 
-- [机器人命令说明](https://github.com/semicons/java_oci_manage/blob/main/md/BOT-README.md)
+- [机器人操作与命令说明](https://github.com/semicons/java_oci_manage/blob/main/md/BOT-README.md)
 
 - [甲骨文云获取API参数](https://github.com/semicons/java_oci_manage/blob/main/md/oracle.md)
 
