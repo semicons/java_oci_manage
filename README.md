@@ -56,9 +56,9 @@
 
 - [机器人操作与命令说明](https://github.com/semicons/java_oci_manage/blob/main/md/BOT-README.md)
 
-- [甲骨文云获取API参数](https://github.com/semicons/java_oci_manage/blob/main/md/oracle.md)
+- [甲骨文云获取API参数与上传](https://github.com/semicons/java_oci_manage/blob/main/md/oracle.md)
 
-- [azure获取API参数](https://github.com/semicons/java_oci_manage/blob/main/md/azure.md)
+- [azure获取API参数与上传](https://github.com/semicons/java_oci_manage/blob/main/md/azure.md)
 
 - [常见问题](https://t.me/agentONE_R/41)
 
