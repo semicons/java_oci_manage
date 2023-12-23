@@ -56,7 +56,7 @@
 
 - [机器人操作与命令说明](https://github.com/semicons/java_oci_manage/blob/main/md/BOT-README.md)
 
-- [甲骨文云获取API参数与上传](https://github.com/semicons/java_oci_manage/blob/main/md/oracle.md)
+- [甲骨文云获取API参数与上传(tip：如只刷机创建API文件时可以限制各种操作权限)](https://github.com/semicons/java_oci_manage/blob/main/md/oracle.md)
 
 - [azure获取API参数与上传](https://github.com/semicons/java_oci_manage/blob/main/md/azure.md)
 
