@@ -1,7 +1,7 @@
 #### 1.Linux一键安装/更新（运行完后使用bash sh_java_oci.sh可重启运行）
 - 脚本并未创建文件夹 可手动创建文件夹方便管理 如：mkdir rbot && cd rbot
 ```bash
-wget -O sh_client_bot.sh https://github.com/semicons/java_oci_manage/releases/latest/download/sh_client_bot.sh && chmod +x sh_client_bot.sh && bash sh_client_bot.sh
+wget -O gz_client_bot.tar.gz  https://github.com/semicons/java_oci_manage/releases/latest/download/gz_client_bot.tar.gz && tar -zxvf gz_client_bot.tar.gz --exclude=client_config  && tar -zxvf gz_client_bot.tar.gz --skip-old-files client_config && chmod +x sh_client_bot.sh && bash sh_client_bot.sh
 ```
 #### 2. 修改配置文件参数
 - 按参数说明编辑client_config文件（model填写local为启动本地无公网IP模式）
