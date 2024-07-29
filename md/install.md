@@ -73,10 +73,9 @@ bash sh_client_bot.sh
 tail -f log_r_client.log  
 
 终止程序
-ps -ef | grep r_client.jar | grep -v grep | awk '{print $2}' | xargs kill -9  
+pgrep -f r_client | xargs -r kill -9   
 
 卸载程序
-rm -rf gz_client_bot.tar.gz client_config r_client.jar sh_client_bot.sh log_r_client.log debug-.log 
-如也不需要JDK也可卸载：apt-get remove openjdk*
+rm -rf gz_client_bot.tar.gz client_config r_client sh_client_bot.sh log_r_client.log debug-.log 
 
 ```
