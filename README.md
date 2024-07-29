@@ -51,10 +51,7 @@
 ```bash
 rm -rf gz_client_bot.tar.gz client_config r_client sh_client_bot.sh log_r_client.log debug-*.log
 ```
-如不需要JDK也可卸载：
-```bash 
-apt remove openjdk*
-```
+
 
 ### 说明与帮助
 - [已实现功能](https://github.com/semicons/java_oci_manage/blob/main/md/function.md)
