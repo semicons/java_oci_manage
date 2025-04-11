@@ -70,7 +70,7 @@ rm -rf gz_client_bot.tar.gz client_config r_client sh_client_bot.sh log_r_client
 <details>
 <summary>查看Releases说明</summary>
  
-> 证明该项目仍然存活
+> 持续证明该项目仍然存活
 
 
 </details>
