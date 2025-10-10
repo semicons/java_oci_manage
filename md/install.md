@@ -70,12 +70,12 @@ azure=end
 bash sh_client_bot.sh 
 
 查看日志(ctrl + c退出日志)
-tail -f log_r_client.log  
+bash sh_client_bot.sh log  
 
 终止程序
 pgrep -f r_client | xargs -r kill -9   
 
 卸载程序
-rm -rf gz_client_bot.tar.gz client_config r_client sh_client_bot.sh log_r_client.log debug-.log 
+bash sh_client_bot.sh uninstall
 
 ```
