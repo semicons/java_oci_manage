@@ -60,6 +60,28 @@ password=T618Q~.LIy_xxxxx~jm~xxxxxx
 tenant=xxxx3713-xxxx-4cb5-xxxx-3001060xxxxx
 
 azure=end
+
+#在ssh=begin和ssh=end之间维护SSH连接信息 支持多个实例
+#示例:
+#ssh_192.168.1.10=root:MyPassword123
+#ssh_129.159.100.50=opc:/root/.ssh/oci_key
+ssh=begin
+
+ssh=end
+
+#在solusvm=begin和solusvm=end之间维护SolusVM客户端配置 (示例为RackNerd)
+#每个配置使用独立的[]块, 必填项: key/hash, 其余可选
+solusvm=begin
+[racknerd-1]
+api=https://nerdvm.racknerd.com/api/client/command.php
+key=
+hash=
+
+[virmach-1]
+api=https://vps.virmach.com/api/client/command.php
+key=
+hash=
+solusvm=end
 ```
 
 #### 3. 启动、终止、查看日志、卸载
