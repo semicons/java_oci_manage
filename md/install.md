@@ -64,7 +64,7 @@ azure=end
 #在ssh=begin和ssh=end之间维护SSH连接信息 支持多个实例
 #示例:
 #ssh_192.168.1.10=root:MyPassword123
-#ssh_129.1.100.55=opc:/root/.ssh/oci_key
+#ssh_129.1.100.55=ubuntu:/root/.ssh/oci_key
 ssh=begin
 
 ssh=end
