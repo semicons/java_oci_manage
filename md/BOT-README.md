@@ -16,6 +16,14 @@
 
 - 获取azure云操作键盘来进行开机等等操作
 
+### /solusvm
+
+- 支持使用solusvm面板的云厂商来管理vps
+
+### /domain
+
+- 支持cloudflare管理域名
+
 ### /me
 
 - 获取个人闪电订阅信息
