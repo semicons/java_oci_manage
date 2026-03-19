@@ -1,12 +1,39 @@
-#### 1.Linux一键安装/更新（运行完后使用bash sh_java_oci.sh可重启运行）
-- 脚本并未创建文件夹 可手动创建文件夹方便管理 如：mkdir rbot && cd rbot
+# 安装与配置
+
+[English](./en/install.md)
+
+---
+
+## 1. 一键安装 / 更新
+
 ```bash
 wget -O sh_client_bot.sh https://github.com/semicons/java_oci_manage/releases/latest/download/sh_client_bot.sh && chmod +x sh_client_bot.sh && bash sh_client_bot.sh
 ```
-#### 2. 修改配置文件参数
-- 按参数说明编辑client_config文件（model填写local为启动本地无公网IP模式）
-```text
-#在oci=begin和oci=end之间放入你的API配置信息 支持多个配置文件 机器人操作profile管理里可更换操作账户
+
+> 建议先创建目录：`mkdir rbot && cd rbot`
+
+---
+
+## 2. 配置参数
+
+安装后会生成 `client_config` 配置文件，按以下说明编辑。
+
+### 用户凭据（必填）
+
+在 [Telegram 机器人](https://t.me/radiance_helper_bot) 中使用 `/raninfo` 命令生成凭据。
+
+```ini
+username=你的用户名
+password=你的密码
+```
+
+> 请妥善保存凭据。如果 Telegram 账号被封，可以凭此信息重新绑定。
+
+### Oracle Cloud (OCI) 配置
+
+在 `oci=begin` 和 `oci=end` 之间放入 API 配置信息，支持多个 Profile。
+
+```ini
 oci=begin
 
 [DEFAULT]
@@ -14,44 +41,25 @@ user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
-key_file=写你的API密钥文件路径 如：/root/rbot/xxx.pem
+key_file=/root/rbot/xxx.pem
 
 [tokyo]
 user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
-region=ap-singapore-1
-key_file=写你的API密钥文件路径 如：/root/rbot/xxx.pem
+region=ap-tokyo-1
+key_file=/root/rbot/xxx.pem
 
 oci=end
+```
 
+> `key_file` 是服务器上的私钥文件路径。私钥在甲骨文控制台添加 API 密钥时生成下载。详见 → [甲骨文云 API 配置](./oracle.md)
 
+### Azure 配置
 
-#用户信息 从 https://t.me/radiance_helper_bot 配置(bot可使用/raninfo命令随机生成)
-#必传
-username=
-#必传
-password=
+在 `azure=begin` 和 `azure=end` 之间放入 API 配置信息，支持多个 Profile。
 
-
-#cloudflare 功能参数 非必传
-#非必传 cloudflare邮箱
-cf_email=
-#非必传 cloudflare key 在我的个人资料->API令牌处->API密钥->Global API Key	获取
-cf_account_key=
-
-
-#非必填 本机ip和端口号 (进阶玩家选项 可填写域名) 不写将自动获取本机ip 并使用默认端口号9527 (小白用户建议不填) 如填写 格式为:https://xxx.xx:9527
-local_address=
-#非必填 url名称(默认为address 可在bot上修改)
-local_url_name=
-
-#非必填 启动模式 填写local为启动本地无公网IP模式(只要能联网即可) 不填或填其他 则启动端口模式
-model=
-
-
-
-#在azure=begin和azure=end之间放入你的azure的API配置信息 支持多个配置文件 机器人切换profile可更换操作配置 上传配置支持使用原格式({"appId":"xxx","password":"xxx"...})上传 
+```ini
 azure=begin
 
 [az001]
@@ -60,44 +68,101 @@ password=T618Q~.LIy_xxxxx~jm~xxxxxx
 tenant=xxxx3713-xxxx-4cb5-xxxx-3001060xxxxx
 
 azure=end
+```
 
-#在ssh=begin和ssh=end之间维护SSH连接信息 支持多个实例
-#示例:
-#ssh_192.168.1.10=root:MyPassword123
-#ssh_129.1.100.55=ubuntu:/root/.ssh/oci_key
+> 也可通过机器人 `/oci` 命令上传原始 JSON 格式。详见 → [Azure API 配置](./azure.md)
+
+### SSH 连接配置
+
+在 `ssh=begin` 和 `ssh=end` 之间维护 SSH 连接信息。格式：`ssh_IP=用户名:密码或密钥路径`
+
+```ini
 ssh=begin
 
-ssh=end
+ssh_192.168.1.10=root:MyPassword123
+ssh_129.1.100.55=ubuntu:/root/.ssh/oci_key
 
-#在solusvm=begin和solusvm=end之间维护SolusVM客户端配置 (示例为RackNerd)
-#每个配置使用独立的[]块, 必填项: key/hash, 其余可选
+ssh=end
+```
+
+> 此配置用于 Telegram 机器人的远程命令执行。Web SSH 终端的连接在浏览器界面中管理，无需在此配置。
+
+### SolusVM 配置
+
+在 `solusvm=begin` 和 `solusvm=end` 之间维护 SolusVM 面板配置。
+
+```ini
 solusvm=begin
+
 [racknerd-1]
 api=https://nerdvm.racknerd.com/api/client/command.php
-key=
-hash=
+key=你的API_Key
+hash=你的API_Hash
 
-[virmach-1]
-api=https://vps.virmach.com/api/client/command.php
-key=
-hash=
 solusvm=end
 ```
 
-#### 3. 启动、终止、查看日志、卸载
-```text
-请先在配置文件内输入对应的参数，然后运行下方需要的指令
+### Cloudflare 配置（可选）
 
-启动或重启
-bash sh_client_bot.sh 
+```ini
+cf_email=你的Cloudflare邮箱
+cf_account_key=你的Global_API_Key
+```
 
-查看日志(ctrl + c退出日志)
-bash sh_client_bot.sh log  
+> Cloudflare Key 获取路径：我的个人资料 → API 令牌 → API 密钥 → Global API Key
 
-终止程序
-pgrep -f r_client | xargs -r kill -9   
+### 网络配置（可选）
 
-卸载程序
-bash sh_client_bot.sh uninstall
+```ini
+# 本机地址（留空则自动获取，使用默认端口 9527）
+local_address=https://xxx.xx:9527
+
+# URL 名称（默认为 address，可在 bot 上修改）
+local_url_name=
+
+# 启动模式（填 local 为无公网 IP 模式；留空或填其他为端口模式）
+model=
+```
+
+---
+
+## 3. 常用命令
+
+| 命令 | 说明 |
+|------|------|
+| `bash sh_client_bot.sh` | 启动 / 重启（守护进程） |
+| `bash sh_client_bot.sh 8888` | 指定端口启动 |
+| `bash sh_client_bot.sh status` | 查看运行状态 |
+| `bash sh_client_bot.sh log` | 查看日志（Ctrl+C 退出） |
+| `bash sh_client_bot.sh stop` | 停止客户端 |
+| `bash sh_client_bot.sh restart` | 重启客户端 |
+| `bash sh_client_bot.sh upgrade` | 升级到最新版本 |
+| `bash sh_client_bot.sh uninstall` | 卸载 |
+
+---
+
+## 4. 访问 Web 界面
+
+启动后通过浏览器访问：
 
 ```
+https://你的IP:9527
+```
+
+- 使用 `username` / `password` 登录，或使用 Telegram 验证码登录
+- 默认端口 `9527`，可通过启动参数修改
+- 确保端口已开放 — 使用 [端口测试工具](https://port.ping.pe) 检查
+- 本地模式（`model=local`）无需开端口，仅通过 Telegram 机器人操作
+
+---
+
+## 5. 支持的架构
+
+| 架构 | 下载包 |
+|------|--------|
+| Linux x86_64（AVX2） | `gz_client_bot_x86.tar.gz` |
+| Linux x86_64（兼容） | `gz_client_bot_x86_compatible.tar.gz` |
+| Linux ARM64 | `gz_client_bot_aarch.tar.gz` |
+| macOS ARM64（Apple Silicon） | `gz_client_bot_mac_aarch.tar.gz` |
+
+> 启动脚本会自动检测架构并下载对应版本，无需手动选择。
