@@ -42,6 +42,8 @@ Switch between Profiles to view different account information.
 | Action | Description |
 |--------|-------------|
 | View Instance List | Display all instances and status |
+| Create Instance | Create a new instance with custom specs, image, and network |
+| Quick Boot | Quickly create an instance from saved configurations |
 | Start / Stop / Reboot | Basic instance operations |
 | Terminate | Delete instance (optionally preserve boot volume) |
 | Reset Image | Reinstall to initial OS image |
@@ -103,6 +105,20 @@ Switch between Profiles to view different account information.
 | Switch Profile | Switch to a different cloud account |
 | Delete Profile | Remove unwanted Profiles |
 
+### Email Delivery
+
+| Action | Description |
+|--------|-------------|
+| One-Click Setup | Enter domain and sender address to automatically create email domain, DKIM signing, DNS records, sender registration, and SMTP credentials |
+| DNS Mode | Supports Cloudflare auto-config and manual mode; manual mode pauses to display DNS records for user confirmation |
+| Setup Progress | Async execution with real-time progress bar, resumable after leaving the page |
+| Domain Management | View email domain list, DKIM verification status, and lifecycle state |
+| Sender Management | View senders under a specific domain and their status |
+| SMTP Config | View SMTP connection info (server/port/username) |
+| Regenerate Credentials | Regenerate SMTP password (shown once, save it securely) |
+| Test Send | Send test email via OCI HTTP API with custom recipient/subject/body |
+| Delete Domain | Cascade delete email domain with associated DKIM and sender resources |
+
 ---
 
 ## Cloudflare DNS Management
@@ -159,11 +175,17 @@ Configure Let's Encrypt auto-certificates in the Settings page. See [Web SSH Gui
 
 ## Themes
 
-The web interface supports multiple theme options:
+The web interface supports 8 themes, each with both light and dark modes:
 
-| Theme | Description |
-|-------|-------------|
-| Classic | Default dark theme |
-| Other Themes | Sakura, Starry Sky, Abyss, etc. |
+| Theme | Style |
+|-------|-------|
+| Classic | Default blue, clean and professional |
+| Sakura | Pink tones, ACG / anime style |
+| Cyber | Neon cyan-blue, techy |
+| Ink | Golden antique, Chinese traditional |
+| Aurora | Teal-purple gradient, northern lights |
+| Stellar | Deep purple tones, starry sky |
+| Abyss | Deep ocean blue-green, bioluminescent |
+| Sunset | Warm orange-coral, cozy |
 
-Switch themes using the selector in the top-right corner.
+Switch themes using the selector in the top-right corner. Toggle the light/dark mode button to switch between light and dark modes.

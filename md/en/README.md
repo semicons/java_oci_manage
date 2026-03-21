@@ -77,6 +77,7 @@ Full list → [Implemented Features](./function.md) ｜ [Bot Commands](./BOT-REA
 Access through your browser — no client software required.
 
 - **SSH Connections** — Password and private key auth, multi-tab
+- **Resource Monitor** — Real-time CPU, memory, disk, and network metrics in top bar
 - **SFTP File Manager** — Browse, upload, download, create directories
 - **Port Forwarding** — Local and remote forwarding
 - **Batch Commands** — Send commands to multiple sessions simultaneously
@@ -86,17 +87,20 @@ Access through your browser — no client software required.
 
 Details → [Web SSH Terminal Guide](./webssh.md)
 
+![Session Management](../../screenshots/terminal-list.jpg)
+
 ### Web Cloud Management Panel
 
 Manage multi-cloud resources directly from your browser — fully aligned with the Telegram bot's capabilities.
 
-- **Instance Management** — Start, stop, reboot, terminate, reset OS, scale up/down
+- **Instance Management** — Create instance, quick boot, start, stop, reboot, terminate, reset OS, scale up/down
 - **Network Management** — Change IP, attach IPv4/IPv6, reserved IP management
 - **Volume Management** — Resize, VPU performance tuning, detach/delete
 - **User Management** — Create users, reset passwords, update email, clear 2FA
 - **Statistics Overview** — Cost, traffic, subscription info, quota queries
 - **DNS Management** — Cloudflare domain record CRUD operations
 - **Object Storage** — OCI Object Storage bucket and file management
+- **Email Delivery** — One-click email domain setup (DKIM/DNS/SMTP fully automated), test send
 - **Azure Management** — VM create/delete/restart, change IP, resource usage
 - **SolusVM Management** — VPS boot/shutdown/reboot, status dashboard
 

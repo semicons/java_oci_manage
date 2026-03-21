@@ -63,6 +63,7 @@
 - [x] Host fingerprint verification (SHA256)
 - [x] Auto host specs detection (OS, CPU, memory, disk)
 - [x] OCI Object Storage management (bucket browsing, file CRUD)
+- [x] Resource monitor panel (top bar displaying real-time CPU / memory / disk / network metrics)
 - [x] ACME auto SSL certificates (Let's Encrypt)
 - [x] Telegram verification code login + anti-brute-force
 - [x] Chinese/English interface switching
@@ -75,7 +76,7 @@
 
 ### Oracle Cloud
 
-- [x] Instance management (start, stop, reboot, terminate, reset OS, scale, rename, repair)
+- [x] Instance management (create, quick boot, start, stop, reboot, terminate, reset OS, scale, rename, repair)
 - [x] Network management (change IP, attach IPv4/IPv6, reserved IP, delete IP)
 - [x] Volume management (resize, VPU performance, detach, delete, batch VPU)
 - [x] User management (create, delete, reset password, update email, clear 2FA, rename tenant)
@@ -83,6 +84,7 @@
 - [x] Profile management (list, switch, delete)
 - [x] Object Storage management (bucket browsing, file upload/download/delete)
 - [x] Instance monitoring alerts / auto-start / daily report / health check
+- [x] Email Delivery (one-click email domain setup, DKIM/DNS auto-config, SMTP credential management, test send)
 
 ### Cloudflare DNS
 
@@ -101,4 +103,4 @@
 
 ## In Development
 
-- [ ] None at this time
+- [ ] More cloud platform management features in progress
