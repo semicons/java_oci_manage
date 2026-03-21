@@ -84,7 +84,7 @@
 - [x] Profile 管理（列表、切换、删除）
 - [x] 对象存储管理（Bucket 浏览、文件上传/下载/删除）
 - [x] 实例监控通知 / 自启 / 每日报告 / 一键测活
-- [x] Email Delivery（一键搭建邮件域、DKIM/DNS 自动配置、SMTP 凭证管理、测试发信）
+- [x] Email Delivery（一键搭建邮件域、DKIM/DNS 自动配置、DKIM 修复、添加发件人、SMTP 凭证管理、测试发信）
 
 ### Cloudflare DNS
 

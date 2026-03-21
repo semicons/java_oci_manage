@@ -113,7 +113,10 @@ Switch between Profiles to view different account information.
 | DNS Mode | Supports Cloudflare auto-config and manual mode; manual mode pauses to display DNS records for user confirmation |
 | Setup Progress | Async execution with real-time progress bar, resumable after leaving the page |
 | Domain Management | View email domain list, DKIM verification status, and lifecycle state |
+| DKIM Info | View DKIM CNAME record details for manual DNS configuration reference |
+| DKIM Repair | Auto-reconfigure DNS CNAME records via Cloudflare when DKIM verification fails (async with progress tracking) |
 | Sender Management | View senders under a specific domain and their status |
+| Add Sender | Add a new sender address to an existing email domain |
 | SMTP Config | View SMTP connection info (server/port/username) |
 | Regenerate Credentials | Regenerate SMTP password (shown once, save it securely) |
 | Test Send | Send test email via OCI HTTP API with custom recipient/subject/body |

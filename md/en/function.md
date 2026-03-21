@@ -84,7 +84,7 @@
 - [x] Profile management (list, switch, delete)
 - [x] Object Storage management (bucket browsing, file upload/download/delete)
 - [x] Instance monitoring alerts / auto-start / daily report / health check
-- [x] Email Delivery (one-click email domain setup, DKIM/DNS auto-config, SMTP credential management, test send)
+- [x] Email Delivery (one-click email domain setup, DKIM/DNS auto-config, DKIM repair, add sender, SMTP credential management, test send)
 
 ### Cloudflare DNS
 
