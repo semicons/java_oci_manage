@@ -1,8 +1,8 @@
 # R-Bot ⭐
 
+[简体中文](../../README.md) | English
+
 <p align="left">
-  <a href="../../README.md"><img src="https://img.shields.io/badge/语言-简体中文-blue"/></a>
-  <img src="https://img.shields.io/badge/Language-English-brightgreen"/>
   <a href="https://t.me/apchyo"><img src="https://img.shields.io/static/v1?label=Group&message=Telegram&color=brightgreen"/></a>
   <a href="https://t.me/agentONE_R"><img src="https://img.shields.io/static/v1?label=Channel&message=Telegram&color=blueviolet"/></a>
   <a href="https://t.me/radiance_helper_bot"><img src="https://img.shields.io/static/v1?label=Bot&message=Telegram&color=red"/></a>
