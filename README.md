@@ -25,6 +25,8 @@ R-Bot 是一套**双端架构**的多云基础设施管理系统，通过 Telegr
 
 ![Web SSH 终端](screenshots/terminal.jpg)
 
+![创建实例](screenshots/cloud-create.jpg)
+
 ---
 
 ## 快速开始

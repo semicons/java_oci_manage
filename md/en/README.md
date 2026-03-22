@@ -25,6 +25,8 @@ R-Bot is a **dual-architecture** multi-cloud infrastructure management system th
 
 ![Web SSH Terminal](../../screenshots/terminal.jpg)
 
+![Create Instance](../../screenshots/cloud-create.jpg)
+
 ---
 
 ## Quick Start
