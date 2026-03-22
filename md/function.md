@@ -65,6 +65,7 @@
 - [x] 资源监控面板（顶栏显示 CPU / 内存 / 硬盘 / 网络实时指标）
 - [x] 对象存储管理（OCI Object Storage Bucket 浏览、文件上传/下载/删除）
 - [x] ACME 自动 SSL 证书（Let's Encrypt）
+- [x] 云平台配置在线上传与管理（OCI/Azure/SolusVM，合并模式 + 热加载）
 - [x] Telegram 验证码登录 + 防暴力破解
 - [x] 中英文界面切换
 - [x] 响应式布局（移动端友好）

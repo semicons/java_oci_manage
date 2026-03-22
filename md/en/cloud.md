@@ -176,6 +176,20 @@ Switch between Profiles to view different account information.
 
 Configure Let's Encrypt auto-certificates in the Settings page. See [Web SSH Guide — SSL Certificates](./webssh.md#ssl-certificate-configuration) for details.
 
+### Cloud Platform Configuration
+
+Upload and manage cloud platform API configurations directly from the web interface — no need to manually edit the `client_config` file.
+
+| Feature | Description |
+|---------|-------------|
+| OCI Config Upload | Paste API config text + upload PEM key file, key_file path auto-configured |
+| Azure Config Upload | Paste appId/password/tenant configuration |
+| SolusVM Config Upload | Paste API URL and key configuration |
+| Merge Mode | Duplicate Profile names are skipped with a warning, new Profiles are appended |
+| Cloudflare Config | Edit Cloudflare email and API Key online |
+| Network Config | Edit local address, URL name, and startup mode online |
+| Hot Reload | Manually refresh in-memory configuration without restarting the client |
+
 ---
 
 ## Themes

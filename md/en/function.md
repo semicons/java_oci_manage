@@ -65,6 +65,7 @@
 - [x] OCI Object Storage management (bucket browsing, file CRUD)
 - [x] Resource monitor panel (top bar displaying real-time CPU / memory / disk / network metrics)
 - [x] ACME auto SSL certificates (Let's Encrypt)
+- [x] Cloud platform config online upload & management (OCI/Azure/SolusVM, merge mode + hot reload)
 - [x] Telegram verification code login + anti-brute-force
 - [x] Chinese/English interface switching
 - [x] Responsive layout (mobile-friendly)

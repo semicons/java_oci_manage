@@ -176,6 +176,20 @@ https://你的IP:9527
 
 在设置页面配置 Let's Encrypt 自动证书，详见 [Web SSH 终端指南 — SSL 证书](./webssh.md#ssl-证书配置)。
 
+### 云平台配置管理
+
+在 Web 界面中直接上传和管理云平台 API 配置，无需手动编辑 `client_config` 文件。
+
+| 功能 | 说明 |
+|------|------|
+| OCI 配置上传 | 粘贴 API 配置文本 + 上传 PEM 密钥文件，自动配置 key_file 路径 |
+| Azure 配置上传 | 粘贴 appId/password/tenant 配置 |
+| SolusVM 配置上传 | 粘贴 API 地址和密钥配置 |
+| 合并模式 | 同名 Profile 自动跳过并提醒，新 Profile 追加到配置中 |
+| Cloudflare 配置 | 在线编辑 Cloudflare 邮箱和 API Key |
+| 网络配置 | 在线编辑本机地址、URL 名称、启动模式 |
+| 配置热加载 | 手动刷新内存中的配置，无需重启客户端 |
+
 ---
 
 ## 主题
