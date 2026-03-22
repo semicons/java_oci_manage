@@ -51,6 +51,8 @@ Switch between Profiles to view different account information.
 | Rename | Change instance display name |
 | Repair | Attempt to repair abnormal instance |
 
+![Create Instance](../screenshots/cloud-create.jpg)
+
 ### Network / IP Management
 
 | Action | Description |
