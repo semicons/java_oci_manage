@@ -37,6 +37,14 @@
 - [x] Cloudflare 域名快捷操作
 - [x] 无需公网 IP 的本地模式
 
+## Telegram 机器人 — AWS
+
+- [x] EC2 实例管理（列表、启动、停止、重启、终止）
+- [x] 自定义创建 EC2 实例（AMI、机型、密钥选择）
+- [x] 换 IP
+- [x] 费用查询
+- [x] 配额用量查询
+
 ## Telegram 机器人 — Azure
 
 - [x] 自定义开机
@@ -65,7 +73,8 @@
 - [x] 资源监控面板（顶栏显示 CPU / 内存 / 硬盘 / 网络实时指标）
 - [x] 对象存储管理（OCI Object Storage Bucket 浏览、文件上传/下载/删除）
 - [x] ACME 自动 SSL 证书（Let's Encrypt）
-- [x] 云平台配置在线上传与管理（OCI/Azure/SolusVM，合并模式 + 热加载）
+- [x] 云主机同步（一键从 OCI/AWS/Azure/SolusVM 发现主机并导入会话列表，SSE 实时进度）
+- [x] 云平台配置在线上传与管理（OCI/AWS/Azure/SolusVM，合并模式 + 热加载）
 - [x] Telegram 验证码登录 + 防暴力破解
 - [x] 中英文界面切换
 - [x] 响应式布局（移动端友好）
@@ -85,7 +94,16 @@
 - [x] Profile 管理（列表、切换、删除）
 - [x] 对象存储管理（Bucket 浏览、文件上传/下载/删除）
 - [x] 实例监控通知 / 自启 / 每日报告 / 一键测活
+- [x] 串行控制台（OCI 实例串行控制台连接，WebSocket 实时终端，Netboot.xyz 救援引导自动化）
 - [x] Email Delivery（一键搭建邮件域、DKIM/DNS 自动配置、DKIM 修复、添加发件人、SMTP 凭证管理、测试发信）
+
+### AWS
+
+- [x] EC2 实例管理（列表、启动、停止、重启、终止）
+- [x] 创建 EC2 实例（AMI 选择、机型选择、密钥管理、异步创建）
+- [x] 网络管理（VPC、安全组）
+- [x] 费用统计（Cost Explorer 集成）
+- [x] 配额用量查询
 
 ### Cloudflare DNS
 
@@ -99,6 +117,14 @@
 ### SolusVM
 
 - [x] VPS 管理（节点列表、仪表盘、开关机、重启）
+
+---
+
+## 云主机同步
+
+- [x] 多云平台主机发现（OCI / AWS / Azure / SolusVM 并行查询）
+- [x] 自动导入到 SSH 会话列表（IP 去重、IPv6 支持）
+- [x] SSE 实时进度反馈（按平台显示查询状态）
 
 ---
 

@@ -72,6 +72,28 @@ azure=end
 
 > You can also upload the raw JSON format via the bot's `/oci` command. See → [Azure API Setup](./azure.md)
 
+### AWS Configuration
+
+Place AWS credentials between `aws=begin` and `aws=end`. Multiple profiles are supported.
+
+```ini
+aws=begin
+
+[DEFAULT]
+access_key_id=AKIAxxxxxxxxxxxxxxxx
+secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+region=us-east-1
+
+[tokyo]
+access_key_id=AKIAxxxxxxxxxxxxxxxx
+secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+region=ap-northeast-1
+
+aws=end
+```
+
+> `region` is optional, defaults to `us-east-1`. Field names support both camelCase (`accessKeyId`) and snake_case (`access_key_id`).
+
 ### SSH Connection Configuration
 
 Maintain SSH connection info between `ssh=begin` and `ssh=end`. Format: `ssh_IP=username:password_or_key_path`.

@@ -2,7 +2,7 @@
 
 [简体中文](../cloud.md)
 
-The R-Bot client includes a full-featured Web cloud management panel. Manage Oracle Cloud, Azure, SolusVM, and Cloudflare DNS resources directly from your browser — fully aligned with the Telegram bot's capabilities.
+The R-Bot client includes a full-featured Web cloud management panel. Manage Oracle Cloud, AWS, Azure, SolusVM, and Cloudflare DNS resources directly from your browser — fully aligned with the Telegram bot's capabilities.
 
 ---
 
@@ -14,9 +14,9 @@ After starting the client, visit:
 https://YOUR_IP:9527
 ```
 
-Log in and navigate to the cloud management modules from the sidebar.
+Log in and access the cloud management workbench via the view switcher from the host dashboard.
 
-> First-time users need to configure cloud platform Profiles in "Settings" or via the `client_config` file.
+> First-time users need to configure cloud platform Profiles in the top bar "Settings" or via the `client_config` file.
 
 ---
 
@@ -124,6 +124,46 @@ Switch between Profiles to view different account information.
 | Test Send | Send test email via OCI HTTP API with custom recipient/subject/body |
 | Delete Domain | Cascade delete email domain with associated DKIM and sender resources |
 
+### Serial Console
+
+Connect to an OCI instance's serial console via Console Connection — useful for emergency maintenance when SSH is unavailable.
+
+| Action | Description |
+|--------|-------------|
+| Connect Console | Auto-generate temporary RSA key pair and establish SSH-over-SSH tunnel |
+| WebSocket Terminal | Real-time serial terminal interaction in browser |
+| Netboot.xyz Automation | Auto-detect UEFI/GRUB menus and boot into Netboot.xyz rescue system |
+| Connection Management | Auto-reuse existing connections, 30-minute key TTL, scheduled cleanup of expired connections |
+| User Confirmation | Semi-automatic confirmation workflow before dangerous operations |
+
+---
+
+## AWS Management
+
+### EC2 Instance Management
+
+| Action | Description |
+|--------|-------------|
+| View Instance List | Display all EC2 instances with real-time status |
+| Create Instance | Select AMI image, instance type, SSH key; async creation with progress tracking |
+| Start / Stop / Reboot | Basic instance power operations |
+| Terminate | Permanently delete EC2 instance |
+
+### Network Management
+
+| Action | Description |
+|--------|-------------|
+| VPC Management | View and manage VPC resources |
+| Security Groups | Manage security group configurations |
+
+### Statistics & Monitoring
+
+| Action | Description |
+|--------|-------------|
+| Cost Statistics | AWS Cost Explorer integration for spending details |
+| Usage Monitoring | CloudWatch metrics queries |
+| Quota Query | View resource quota usage |
+
 ---
 
 ## Cloudflare DNS Management
@@ -183,6 +223,7 @@ Upload and manage cloud platform API configurations directly from the web interf
 | Feature | Description |
 |---------|-------------|
 | OCI Config Upload | Paste API config text + upload PEM key file, key_file path auto-configured |
+| AWS Config Upload | Paste Access Key ID / Secret Access Key configuration |
 | Azure Config Upload | Paste appId/password/tenant configuration |
 | SolusVM Config Upload | Paste API URL and key configuration |
 | Merge Mode | Duplicate Profile names are skipped with a warning, new Profiles are appended |
@@ -207,4 +248,4 @@ The web interface supports 8 themes, each with both light and dark modes:
 | Abyss | Deep ocean blue-green, bioluminescent |
 | Sunset | Warm orange-coral, cozy |
 
-Switch themes using the selector in the top-right corner. Toggle the light/dark mode button to switch between light and dark modes.
+Switch themes using the selector in the top bar. Toggle the light/dark mode button to switch between light and dark modes.

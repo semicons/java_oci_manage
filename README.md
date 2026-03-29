@@ -11,7 +11,7 @@
 
 ## 概述
 
-R-Bot 是一套**双端架构**的多云基础设施管理系统，通过 Telegram 机器人驱动本地客户端，快速管理 Oracle Cloud (OCI)、Azure、SolusVM 等云平台资源。客户端同时内置了完整的 **Web SSH 终端** 和 **Web 云管理面板**，在浏览器中即可完成服务器运维和云资源管理。
+R-Bot 是一套**双端架构**的多云基础设施管理系统，通过 Telegram 机器人驱动本地客户端，快速管理 Oracle Cloud (OCI)、AWS、Azure、SolusVM 等云平台资源。客户端同时内置了完整的 **Web SSH 终端** 和 **Web 云管理面板**，在浏览器中即可完成服务器运维和云资源管理。
 
 ### 核心特性
 
@@ -19,9 +19,10 @@ R-Bot 是一套**双端架构**的多云基础设施管理系统，通过 Telegr
 |------|------|
 | **双端安全架构** | API 私钥仅存储在本地客户端，机器人不存储任何敏感数据 |
 | **Telegram 机器人管理** | 30+ 云操作：开机、IP 管理、磁盘、监控等 |
-| **Web SSH 终端** | 浏览器内 SSH 连接，多标签页、SFTP 文件管理、端口转发 |
-| **Web 云管理面板** | 浏览器内管理实例、网络、卷、用户、DNS、对象存储等 |
-| **多云支持** | Oracle Cloud、Azure、SolusVM、Cloudflare DNS |
+| **Web SSH 终端** | 主机面板 + 终端工作区，多标签页、SFTP 文件管理、端口转发 |
+| **Web 云管理面板** | 浏览器内管理实例、网络、卷、用户、DNS、对象存储、串行控制台等 |
+| **多云支持** | Oracle Cloud、AWS、Azure、SolusVM、Cloudflare DNS |
+| **云主机同步** | 一键从多云平台发现并同步主机到 SSH 会话列表 |
 | **原生编译** | 亚秒级启动，极低内存占用 |
 
 ![Web SSH 终端](screenshots/terminal.jpg)
@@ -65,7 +66,7 @@ bash sh_client_bot.sh
 
 ### Telegram 机器人 — 云管理
 
-通过 Telegram 机器人操作，支持 Oracle Cloud 和 Azure。
+通过 Telegram 机器人操作，支持 Oracle Cloud、AWS 和 Azure。
 
 - **实例管理** — 开机、升降配、重置系统、终止
 - **IP 管理** — 换 IP、自动 DNS 更新、IPv6
@@ -84,7 +85,9 @@ bash sh_client_bot.sh
 - **SFTP 文件管理** — 浏览、上传、下载、创建目录
 - **端口转发** — 本地转发和远程转发
 - **批量命令** — 向多个会话同时发送命令
+- **主机面板** — 卡片网格展示所有会话，搜索过滤、快速连接
 - **会话管理** — 保存连接配置，集中密钥管理
+- **云主机同步** — 一键从 OCI/AWS/Azure/SolusVM 发现主机并导入会话列表
 - **SSL 证书** — 内置 ACME 自动签发（Let's Encrypt）
 - **对象存储** — OCI Object Storage 的 Bucket 和文件管理
 
@@ -97,6 +100,7 @@ bash sh_client_bot.sh
 在浏览器中直接管理多云资源，与 Telegram 机器人操作能力对齐。
 
 - **实例管理** — 创建实例、快捷开机、启动、关机、重启、终止、重装系统、升降配
+- **串行控制台** — OCI 实例串行控制台连接，支持 Netboot.xyz 救援引导自动化
 - **网络管理** — 换 IP、附加 IPv4/IPv6、保留 IP 管理
 - **卷管理** — 调整容量、VPU 性能、分离/删除
 - **用户管理** — 创建用户、重置密码、修改邮箱、清除 2FA
@@ -104,6 +108,7 @@ bash sh_client_bot.sh
 - **DNS 管理** — Cloudflare 域名记录的增删改查
 - **对象存储** — OCI Object Storage 的 Bucket 和文件管理
 - **Email Delivery** — 一键搭建邮件域（DKIM/DNS/SMTP 全自动）、测试发信
+- **AWS 管理** — EC2 实例创建/管理/删除、网络管理、费用统计
 - **Azure 管理** — VM 创建/删除/重启、换 IP、资源用量
 - **SolusVM 管理** — VPS 开关机/重启、状态仪表盘
 

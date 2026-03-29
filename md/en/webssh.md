@@ -18,6 +18,35 @@ https://YOUR_IP:9527
 
 ---
 
+## Page Layout
+
+After login, the main interface uses a **four-view switching** layout:
+
+```
+┌─────────────────────────────────────────────────────┐
+│ Top Bar: Brand | Language | Theme | Lightning |      │
+│          Settings | Logout                           │
+├─────────────────────────────────────────────────────┤
+│                                                     │
+│  Main Content (View Switching)   Config Drawer      │
+│  · Host Dashboard                (slides from right)│
+│  · Terminal Workspace                               │
+│  · Cloud Management                                 │
+│  · Lightning Benefits                               │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+```
+
+| Area | Description |
+|------|-------------|
+| **Top Bar** | Brand logo "R·Cloud·SSH", language selector, theme picker (8 themes), Lightning entry, settings menu (SSL Certificates / Config Files), light/dark mode toggle, logout |
+| **Host Dashboard** | Default view after login — displays all saved host sessions as a card grid with search, cloud host sync, add session, and batch selection |
+| **Terminal Workspace** | Auto-switches when connecting to a host — includes tab bar, terminal panes, and SFTP panel (drag-resizable height) |
+| **Cloud Management** | Multi-cloud resource management workbench — see [Cloud Management Guide](./cloud.md) |
+| **Config Drawer** | Right-sliding panel for connection details, authentication, and port forwarding configuration |
+
+---
+
 ## Login Authentication
 
 Two login methods are supported:
@@ -42,13 +71,14 @@ Log in directly using the `username` and `password` configured in `client_config
 
 ### New Connection
 
-1. Click the "+" button or "New Connection" in the sidebar
+1. Click "Add Session" in the host dashboard — the config drawer slides in from the right
 2. Fill in connection details:
+   - **Session Name** — Custom name (optional)
    - **Host** — IP address or domain name
    - **Port** — Default 22
    - **Username** — SSH login user
    - **Auth Method** — Password or private key
-3. Click "Connect"
+3. Click "Connect" to auto-switch to the terminal workspace
 
 ### Authentication Methods
 
@@ -61,9 +91,13 @@ Log in directly using the `username` and `password` configured in `client_config
 
 On first connection, the SHA256 host fingerprint is displayed for confirmation and saved. If the fingerprint changes on subsequent connections (possibly due to server reinstallation or a security risk), a warning is shown.
 
+### Quick Connect
+
+In the host dashboard, click the "Quick Connect" button on a saved host card to connect directly without re-entering details. Click the "Load" button to open the config drawer for editing connection parameters.
+
 ### Multi-Tab
 
-Multiple SSH connections can be open simultaneously, each in its own tab, freely switchable.
+Multiple SSH connections can be open simultaneously, each in its own tab, freely switchable. The tab bar also integrates system resource monitoring metrics (CPU / Memory / Disk / Network).
 
 ![Terminal Interface](../../screenshots/terminal.jpg)
 
@@ -71,7 +105,7 @@ Multiple SSH connections can be open simultaneously, each in its own tab, freely
 
 ## SFTP File Manager
 
-After connecting via SSH, click the "SFTP" button in the toolbar to open the file management panel.
+After connecting via SSH, click the "SFTP" button in the tab bar to open the file management panel. The SFTP panel appears below the terminal and supports **drag-resizing** the divider to adjust the height ratio between terminal and SFTP.
 
 ### Features
 
@@ -89,7 +123,7 @@ After connecting via SSH, click the "SFTP" button in the toolbar to open the fil
 
 ## Port Forwarding
 
-Configure SSH port forwarding while connected to a terminal.
+Configure SSH port forwarding in the config drawer (while connected).
 
 ### Local Forward
 
@@ -113,23 +147,36 @@ Expose a local service to a port on the remote server.
 
 ## Batch Commands
 
-Send the same command to multiple connected sessions simultaneously — ideal for batch operations.
+Send the same command to multiple hosts simultaneously — ideal for batch operations.
 
-1. Click "Batch Commands" in the toolbar
-2. Select target sessions (multi-select)
-3. Enter the command and send
+1. In the host dashboard, check the target host cards (multi-select supported)
+2. A batch toolbar automatically appears at the bottom showing the selected count
+3. Enter the command in the input field and click execute
+4. Results are displayed in real-time as grid cards showing each host's execution status and output
 
 ---
 
 ## Session Management
 
+### Host Dashboard
+
+The default view after login displays all saved sessions as a **responsive card grid**. Each card shows:
+
+- Session name and description
+- Host specs (OS, CPU, memory, disk — auto-detected after connection)
+- IP address(es) with one-click copy
+- Last modified timestamp
+- Action buttons: Quick Connect, Load Config, Delete
+
+The dashboard header provides a search box (filter by name / IP) and an "Add Session" button.
+
 ### Save Sessions
 
-After a successful connection, save the current configuration as a session profile for one-click reconnection. Saved information includes:
+After a successful connection, save the current configuration as a session from the config drawer for one-click reconnection from the host dashboard. Saved information includes:
 
+- Session name, description
 - Host, port, username
 - Auth method and credentials (encrypted storage)
-- Default SFTP path
 
 ### SSH Key Management
 
@@ -141,6 +188,31 @@ Centralized management of all SSH private keys:
 
 <!-- Screenshot placeholder: Session list -->
 <!-- ![Session Management](../../screenshots/sessions.png) -->
+
+---
+
+## Cloud Host Sync
+
+One-click discover hosts from multiple cloud platforms and auto-import them into the SSH session list — no manual entry needed.
+
+### Supported Platforms
+
+| Platform | Synced Content |
+|----------|----------------|
+| **Oracle Cloud (OCI)** | All instance public/private IPs, names, shapes, regions |
+| **AWS** | EC2 instance public/private IPs, names (Name tag), instance types, regions |
+| **Azure** | VM IP addresses and instance info |
+| **SolusVM** | VPS node IP addresses |
+
+### How It Works
+
+1. Click the "Cloud Host Sync" button at the top of the host dashboard
+2. The system queries all configured cloud platform Profiles in parallel
+3. Real-time progress is displayed via SSE (Server-Sent Events) for each platform
+4. Newly discovered hosts are automatically added to the host dashboard (existing IPs are skipped)
+5. After sync completes, a summary shows added count, skipped count, and any errors
+
+> Synced hosts default to SSH port 22, with automatic IPv6 address detection.
 
 ---
 
@@ -189,7 +261,7 @@ Once configured, certificates are issued automatically and renewed 2 days before
 
 ## Multi-Language Support
 
-The web interface supports Chinese/English switching via the toggle in the top-right corner.
+The web interface supports Chinese/English switching via the language selector in the top bar.
 
 - 简体中文 (zh-CN)
 - English (en)

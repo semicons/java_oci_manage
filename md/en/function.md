@@ -37,6 +37,14 @@
 - [x] Cloudflare domain quick actions
 - [x] Local mode without public IP
 
+## Telegram Bot — AWS
+
+- [x] EC2 instance management (list, start, stop, reboot, terminate)
+- [x] Custom EC2 instance creation (AMI, instance type, key pair selection)
+- [x] Change IP
+- [x] Cost query
+- [x] Quota usage query
+
 ## Telegram Bot — Azure
 
 - [x] Custom boot
@@ -65,7 +73,8 @@
 - [x] OCI Object Storage management (bucket browsing, file CRUD)
 - [x] Resource monitor panel (top bar displaying real-time CPU / memory / disk / network metrics)
 - [x] ACME auto SSL certificates (Let's Encrypt)
-- [x] Cloud platform config online upload & management (OCI/Azure/SolusVM, merge mode + hot reload)
+- [x] Cloud host sync (one-click discover hosts from OCI/AWS/Azure/SolusVM and import to session list, real-time SSE progress)
+- [x] Cloud platform config online upload & management (OCI/AWS/Azure/SolusVM, merge mode + hot reload)
 - [x] Telegram verification code login + anti-brute-force
 - [x] Chinese/English interface switching
 - [x] Responsive layout (mobile-friendly)
@@ -85,7 +94,16 @@
 - [x] Profile management (list, switch, delete)
 - [x] Object Storage management (bucket browsing, file upload/download/delete)
 - [x] Instance monitoring alerts / auto-start / daily report / health check
+- [x] Serial Console (OCI instance serial console connection, WebSocket real-time terminal, Netboot.xyz rescue boot automation)
 - [x] Email Delivery (one-click email domain setup, DKIM/DNS auto-config, DKIM repair, add sender, SMTP credential management, test send)
+
+### AWS
+
+- [x] EC2 instance management (list, start, stop, reboot, terminate)
+- [x] Create EC2 instances (AMI selection, instance type, key management, async creation)
+- [x] Network management (VPC, security groups)
+- [x] Cost statistics (Cost Explorer integration)
+- [x] Quota usage query
 
 ### Cloudflare DNS
 
@@ -99,6 +117,14 @@
 ### SolusVM
 
 - [x] VPS management (node list, dashboard, boot/shutdown/reboot)
+
+---
+
+## Cloud Host Sync
+
+- [x] Multi-cloud host discovery (OCI / AWS / Azure / SolusVM parallel queries)
+- [x] Auto-import to SSH session list (IP deduplication, IPv6 support)
+- [x] Real-time SSE progress feedback (per-platform query status)
 
 ---
 

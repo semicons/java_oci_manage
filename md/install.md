@@ -72,6 +72,28 @@ azure=end
 
 > 也可通过机器人 `/oci` 命令上传原始 JSON 格式。详见 → [Azure API 配置](./azure.md)
 
+### AWS 配置
+
+在 `aws=begin` 和 `aws=end` 之间放入 AWS 凭据配置，支持多个 Profile。
+
+```ini
+aws=begin
+
+[DEFAULT]
+access_key_id=AKIAxxxxxxxxxxxxxxxx
+secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+region=us-east-1
+
+[tokyo]
+access_key_id=AKIAxxxxxxxxxxxxxxxx
+secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+region=ap-northeast-1
+
+aws=end
+```
+
+> `region` 为可选参数，默认为 `us-east-1`。字段名支持驼峰格式（`accessKeyId`）和下划线格式（`access_key_id`）。
+
 ### SSH 连接配置
 
 在 `ssh=begin` 和 `ssh=end` 之间维护 SSH 连接信息。格式：`ssh_IP=用户名:密码或密钥路径`

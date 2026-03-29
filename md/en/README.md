@@ -11,7 +11,7 @@
 
 ## Overview
 
-R-Bot is a **dual-architecture** multi-cloud infrastructure management system that drives a local client through a Telegram bot for quick management of Oracle Cloud (OCI), Azure, SolusVM, and more. The client also includes a built-in **Web SSH Terminal** and **Web Cloud Management Panel**, providing in-browser server operations and cloud resource management.
+R-Bot is a **dual-architecture** multi-cloud infrastructure management system that drives a local client through a Telegram bot for quick management of Oracle Cloud (OCI), AWS, Azure, SolusVM, and more. The client also includes a built-in **Web SSH Terminal** and **Web Cloud Management Panel**, providing in-browser server operations and cloud resource management.
 
 ### Key Features
 
@@ -19,9 +19,10 @@ R-Bot is a **dual-architecture** multi-cloud infrastructure management system th
 |---------|-------------|
 | **Dual-Architecture Security** | API private keys are stored only on your local client; the bot stores no sensitive data |
 | **Telegram Bot Management** | 30+ cloud operations: boot instances, manage IPs, disks, monitoring, etc. |
-| **Web SSH Terminal** | In-browser SSH with multi-tab, SFTP, and port forwarding |
-| **Web Cloud Management** | Manage instances, networks, volumes, users, DNS, object storage from your browser |
-| **Multi-Cloud Support** | Oracle Cloud, Azure, SolusVM, Cloudflare DNS |
+| **Web SSH Terminal** | Host dashboard + terminal workspace with multi-tab, SFTP, and port forwarding |
+| **Web Cloud Management** | Manage instances, networks, volumes, users, DNS, object storage, serial console from your browser |
+| **Multi-Cloud Support** | Oracle Cloud, AWS, Azure, SolusVM, Cloudflare DNS |
+| **Cloud Host Sync** | One-click discover and sync hosts from multiple clouds to SSH session list |
 | **GraalVM Native Compilation** | Sub-second startup, low memory footprint |
 
 ![Web SSH Terminal](../../screenshots/terminal.jpg)
@@ -65,7 +66,7 @@ After startup, the Web SSH terminal is available at `https://YOUR_IP:9527` (HTTP
 
 ### Telegram Bot — Cloud Management
 
-Operated through the Telegram bot, supporting Oracle Cloud and Azure.
+Operated through the Telegram bot, supporting Oracle Cloud, AWS, and Azure.
 
 - **Instance Management** — Boot, scale up/down, reset OS, terminate
 - **IP Management** — Change IP, auto DNS update, IPv6
@@ -84,7 +85,9 @@ Access through your browser — no client software required.
 - **SFTP File Manager** — Browse, upload, download, create directories
 - **Port Forwarding** — Local and remote forwarding
 - **Batch Commands** — Send commands to multiple sessions simultaneously
+- **Host Dashboard** — Card grid displaying all sessions with search, quick connect
 - **Session Management** — Save connection profiles, centralized key management
+- **Cloud Host Sync** — One-click discover hosts from OCI/AWS/Azure/SolusVM and import to session list
 - **SSL Certificates** — Built-in ACME auto-provisioning (Let's Encrypt)
 - **OCI Object Storage** — Manage Buckets and objects in-browser
 
@@ -97,6 +100,7 @@ Details → [Web SSH Terminal Guide](./webssh.md)
 Manage multi-cloud resources directly from your browser — fully aligned with the Telegram bot's capabilities.
 
 - **Instance Management** — Create instance, quick boot, start, stop, reboot, terminate, reset OS, scale up/down
+- **Serial Console** — OCI instance serial console connection with Netboot.xyz rescue boot automation
 - **Network Management** — Change IP, attach IPv4/IPv6, reserved IP management
 - **Volume Management** — Resize, VPU performance tuning, detach/delete
 - **User Management** — Create users, reset passwords, update email, clear 2FA
@@ -104,6 +108,7 @@ Manage multi-cloud resources directly from your browser — fully aligned with t
 - **DNS Management** — Cloudflare domain record CRUD operations
 - **Object Storage** — OCI Object Storage bucket and file management
 - **Email Delivery** — One-click email domain setup (DKIM/DNS/SMTP fully automated), test send
+- **AWS Management** — EC2 instance create/manage/delete, network management, cost statistics
 - **Azure Management** — VM create/delete/restart, change IP, resource usage
 - **SolusVM Management** — VPS boot/shutdown/reboot, status dashboard
 
