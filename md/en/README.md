@@ -19,9 +19,10 @@ R-Bot is a **dual-architecture** multi-cloud infrastructure management system th
 |---------|-------------|
 | **Dual-Architecture Security** | API private keys are stored only on your local client; the bot stores no sensitive data |
 | **Telegram Bot Management** | 30+ cloud operations: boot instances, manage IPs, disks, monitoring, etc. |
-| **Web SSH Terminal** | Host dashboard + terminal workspace with multi-tab, SFTP, and port forwarding |
+| **Smart Web SSH Terminal** | Host dashboard + terminal workspace with multi-tab, SFTP, port forwarding, and smart multi-key auto-matching |
 | **Web Cloud Management** | Manage instances, networks, volumes, users, DNS, object storage, serial console from your browser |
-| **Multi-Cloud Support** | Oracle Cloud, AWS, Azure, SolusVM, Cloudflare DNS |
+| **Multi-Cloud Support** | Oracle Cloud, AWS, Azure, SolusVM |
+| **Cloudflare Integration** | DNS management, ACME auto-certificates, auto DNS update on IP change |
 | **Cloud Host Sync** | One-click discover and sync hosts from multiple clouds to SSH session list |
 | **GraalVM Native Compilation** | Sub-second startup, low memory footprint |
 
