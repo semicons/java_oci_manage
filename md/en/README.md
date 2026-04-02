@@ -77,15 +77,15 @@ Operated through the Telegram bot, supporting Oracle Cloud, AWS, and Azure.
 
 Full list → [Implemented Features](./function.md) ｜ [Bot Commands](./BOT-README.md)
 
-### Web SSH Terminal
+### Smart Web SSH Terminal
 
 Access through your browser — no client software required.
 
-- **SSH Connections** — Password and private key auth, multi-tab
+- **SSH Connections** — Password and private key auth, multi-tab, auto-reconnect on disconnect
 - **Resource Monitor** — Real-time CPU, memory, disk, and network metrics in top bar
-- **SFTP File Manager** — Browse, upload, download, create directories
+- **SFTP File Manager** — Browse, upload, download, delete, online edit (syntax highlighting)
 - **Port Forwarding** — Local and remote forwarding
-- **Batch Commands** — Send commands to multiple sessions simultaneously
+- **Batch Commands** — Send commands to multiple hosts simultaneously, result workbench with continuous execution
 - **Host Dashboard** — Card grid displaying all sessions with search, quick connect
 - **Session Management** — Save connection profiles, centralized key management
 - **Cloud Host Sync** — One-click discover hosts from OCI/AWS/Azure/SolusVM and import to session list

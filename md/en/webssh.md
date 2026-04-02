@@ -95,6 +95,10 @@ On first connection, the SHA256 host fingerprint is displayed for confirmation a
 
 In the host dashboard, click the "Quick Connect" button on a saved host card to connect directly without re-entering details. Click the "Load" button to open the config drawer for editing connection parameters.
 
+### Auto-Reconnect
+
+When an SSH connection is interrupted (e.g., server reboot or network fluctuation), the terminal automatically attempts to reconnect using an exponential backoff strategy — no manual action needed to restore the session.
+
 ### Multi-Tab
 
 Multiple SSH connections can be open simultaneously, each in its own tab, freely switchable. The tab bar also integrates system resource monitoring metrics (CPU / Memory / Disk / Network).
@@ -114,6 +118,8 @@ After connecting via SSH, click the "SFTP" button in the tab bar to open the fil
 | **Browse Directories** | Click folders to enter; breadcrumb navigation for quick jumping |
 | **Upload Files** | Chunked upload with progress display |
 | **Download Files** | Streaming transfer with 512KB chunks + sliding window acknowledgment |
+| **Online Edit** | syntax highlighting — edit server files directly in the browser |
+| **Delete Files/Folders** | Inline confirmation, supports recursive directory deletion |
 | **Create Directory** | Create new folders in the current path |
 
 <!-- Screenshot placeholder: SFTP file management panel -->
@@ -152,7 +158,8 @@ Send the same command to multiple hosts simultaneously — ideal for batch opera
 1. In the host dashboard, check the target host cards (multi-select supported)
 2. A batch toolbar automatically appears at the bottom showing the selected count
 3. Enter the command in the input field and click execute
-4. Results are displayed in real-time as grid cards showing each host's execution status and output
+4. Enter the result workbench — results are displayed in real-time as grid cards showing each host's execution status and output
+5. Continue executing new commands directly in the result workbench without re-selecting hosts
 
 ---
 
@@ -183,7 +190,7 @@ After a successful connection, save the current configuration as a session from 
 Centralized management of all SSH private keys:
 
 - Add / delete keys
-- Auto-match saved keys when connecting
+- Concurrent smart matching of saved keys when connecting
 - Keys stored with AES encryption
 
 <!-- Screenshot placeholder: Session list -->

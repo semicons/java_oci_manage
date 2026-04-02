@@ -63,11 +63,13 @@
 
 - [x] In-browser SSH connections (password / private key auth)
 - [x] Multi-tab parallel terminals
-- [x] SFTP file management (browse, upload, download, create directories)
+- [x] SFTP file management (browse, upload, download, delete files/folders, create directories)
+- [x] SFTP online text editor (syntax highlighting, edit server files directly in browser)
 - [x] SSH port forwarding (local / remote)
-- [x] Batch commands (send to multiple sessions simultaneously)
+- [x] SSH auto-reconnect on disconnect (exponential backoff, supports reboot / network interruption scenarios)
+- [x] Batch commands (send to multiple hosts simultaneously, result workbench with continuous execution)
 - [x] Session profile save & management
-- [x] Centralized SSH key management (encrypted storage, smart matching)
+- [x] Centralized SSH key management (encrypted storage, concurrent smart matching)
 - [x] Host fingerprint verification (SHA256)
 - [x] Auto host specs detection (OS, CPU, memory, disk)
 - [x] OCI Object Storage management (bucket browsing, file CRUD)
@@ -77,6 +79,7 @@
 - [x] Cloud platform config online upload & management (OCI/AWS/Azure/SolusVM, merge mode + hot reload)
 - [x] Telegram verification code login + anti-brute-force
 - [x] Chinese/English interface switching
+- [x] Page state memory (auto-restore position after refresh, cloud management sub-page state sync)
 - [x] Responsive layout (mobile-friendly)
 - [x] HTTPS (TLSv1.3) + HTTP/2
 
