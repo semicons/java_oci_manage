@@ -43,6 +43,7 @@ Switch between Profiles to view different account information.
 |--------|-------------|
 | View Instance List | Display all instances and status |
 | Create Instance | Create a new instance with custom specs, image, and network |
+| Force ARM Boot | Improve ARM instance creation success rate for trial accounts (briefly uses paid features, use at your own risk) |
 | Quick Boot | Quickly create an instance from saved configurations |
 | Start / Stop / Reboot | Basic instance operations |
 | Terminate | Delete instance (optionally preserve boot volume) |

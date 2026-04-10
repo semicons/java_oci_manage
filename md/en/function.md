@@ -89,7 +89,8 @@
 
 ### Oracle Cloud
 
-- [x] Instance management (create, quick boot, start, stop, reboot, terminate, reset OS, scale, rename, repair)
+- [x] Instance management (create, quick boot, Force ARM boot, start, stop, reboot, terminate, reset OS, scale, rename, repair)
+- [x] Force ARM boot (improve ARM creation success rate for trial accounts, supports Web + Telegram)
 - [x] Network management (change IP, attach IPv4/IPv6, reserved IP, delete IP)
 - [x] Volume management (resize, VPU performance, detach, delete, batch VPU)
 - [x] User management (create, delete, reset password, update email, clear 2FA, rename tenant)
