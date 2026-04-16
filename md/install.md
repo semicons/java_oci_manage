@@ -14,20 +14,31 @@ wget -O sh_client_bot.sh https://github.com/semicons/java_oci_manage/releases/la
 
 ---
 
-## 2. 配置参数
+## 2. 激活客户端
 
-安装后会生成 `client_config` 配置文件，按以下说明编辑。
+首次启动时，系统会自动生成用户凭据并写入 `client_config` 文件。此时客户端处于未激活状态，页面顶部会显示红色提示栏。
 
-### 用户凭据（必填）
+### 方式一：通过 Telegram 机器人激活（推荐）
 
-在 [Telegram 机器人](https://t.me/radiance_helper_bot) 中使用 `/raninfo` 命令生成凭据。
+1. 打开 Web 页面，复制提示栏中的 `/bindclient` 命令
+2. 发送给 [Telegram 机器人](https://t.me/radiance_helper_bot)
+3. 刷新页面，激活完成
 
-```ini
-username=你的用户名
-password=你的密码
-```
+### 方式二：绑定已有账户
+
+如果你已有其他客户端的账户凭据：
+
+1. 点击提示栏中的「已有账户？」
+2. 输入已有的用户名和密码
+3. 绑定成功后自动登录
 
 > 请妥善保存凭据。如果 Telegram 账号被封，可以凭此信息重新绑定。
+
+---
+
+## 3. 配置参数
+
+激活后，编辑 `client_config` 配置文件添加云平台 API 参数。
 
 ### Oracle Cloud (OCI) 配置
 
@@ -148,7 +159,7 @@ model=
 
 ---
 
-## 3. 常用命令
+## 4. 常用命令
 
 | 命令 | 说明 |
 |------|------|
@@ -163,7 +174,7 @@ model=
 
 ---
 
-## 4. 访问 Web 界面
+## 5. 访问 Web 界面
 
 启动后通过浏览器访问：
 
@@ -178,7 +189,7 @@ https://你的IP:9527
 
 ---
 
-## 5. 支持的架构
+## 6. 支持的架构
 
 | 架构 | 下载包 |
 |------|--------|

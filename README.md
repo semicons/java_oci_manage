@@ -47,19 +47,24 @@ wget -O sh_client_bot.sh https://github.com/semicons/java_oci_manage/releases/la
 
 > 建议先创建目录：`mkdir rbot && cd rbot`
 
-### 3. 配置参数
-
-在机器人中使用 `/raninfo` 生成用户凭据，填入 `client_config` 文件的 `username` 和 `password`，并添加云平台 API 参数。
-
-详见 → [安装与配置](md/install.md)
-
-### 4. 启动
+### 3. 启动
 
 ```bash
 bash sh_client_bot.sh
 ```
 
-启动后即可通过 `https://你的IP:9527` 访问 Web SSH 终端和云管理面板。
+启动后访问 `https://你的IP:9527`。
+
+### 4. 激活客户端
+
+首次启动会自动生成凭据，页面顶部会显示激活提示。两种方式完成激活：
+
+- **方式一**：复制页面提示的 `/bindclient` 命令，发送给 [Telegram 机器人](https://t.me/radiance_helper_bot) 完成绑定
+- **方式二**：如已有账户，点击「已有账户？」输入已有的用户名和密码绑定
+
+激活后即可添加云平台 API 参数开始使用。
+
+详见 → [安装与配置](md/install.md)
 
 ---
 

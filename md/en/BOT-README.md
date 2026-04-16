@@ -28,6 +28,7 @@
 | Command | Description |
 |---------|-------------|
 | `/me` | View personal Lightning subscription info |
+| `/bindclient` | Bind and activate a client. Copy the command from the client's activation banner and send it to the bot |
 | `/raninfo` | Generate or reset random user credentials (save these for rebinding) |
 | `/flash` | Compare standard vs Lightning privileges |
 | `/migrate` | Transfer Lightning privileges to current account. Usage: `/migrate old_username old_password` |

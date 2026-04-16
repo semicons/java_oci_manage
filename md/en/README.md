@@ -47,19 +47,24 @@ wget -O sh_client_bot.sh https://github.com/semicons/java_oci_manage/releases/la
 
 > Recommended: create a directory first — `mkdir rbot && cd rbot`
 
-### 3. Configure
-
-Use `/raninfo` in the bot to generate user credentials, fill `username` and `password` into the `client_config` file, and add your cloud API parameters.
-
-Details → [Installation & Configuration](./install.md)
-
-### 4. Start
+### 3. Start
 
 ```bash
 bash sh_client_bot.sh
 ```
 
-After startup, the Web SSH terminal is available at `https://YOUR_IP:9527` (HTTPS).
+After startup, visit `https://YOUR_IP:9527`.
+
+### 4. Activate the Client
+
+On first startup, credentials are auto-generated and an activation banner appears at the top of the page. Two ways to activate:
+
+- **Option 1**: Copy the `/bindclient` command shown on the page and send it to the [Telegram Bot](https://t.me/radiance_helper_bot)
+- **Option 2**: If you already have an account, click "Already have an account?" and enter your existing credentials
+
+Once activated, add your cloud API parameters to start using the platform.
+
+Details → [Installation & Configuration](./install.md)
 
 ---
 

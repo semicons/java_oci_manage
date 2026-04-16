@@ -14,20 +14,31 @@ wget -O sh_client_bot.sh https://github.com/semicons/java_oci_manage/releases/la
 
 ---
 
-## 2. Configuration Parameters
+## 2. Activate the Client
 
-After installation, a `client_config` file is generated. Edit it according to the following guide.
+On first startup, the system auto-generates user credentials and writes them to the `client_config` file. The client is inactive until activated — a red banner will appear at the top of the page.
 
-### User Credentials (Required)
+### Option 1: Activate via Telegram Bot (Recommended)
 
-Generate credentials using the `/raninfo` command in the [Telegram Bot](https://t.me/radiance_helper_bot).
+1. Open the web page and copy the `/bindclient` command from the banner
+2. Send it to the [Telegram Bot](https://t.me/radiance_helper_bot)
+3. Refresh the page — activation complete
 
-```ini
-username=your_username
-password=your_password
-```
+### Option 2: Bind an Existing Account
+
+If you already have credentials from another client:
+
+1. Click "Already have an account?" in the banner
+2. Enter your existing username and password
+3. Binding completes and you're logged in automatically
 
 > Keep these credentials safe. If your Telegram account gets banned, you can use them to rebind.
+
+---
+
+## 3. Configuration Parameters
+
+After activation, edit the `client_config` file to add cloud platform API parameters.
 
 ### Oracle Cloud (OCI) Configuration
 
@@ -148,7 +159,7 @@ model=
 
 ---
 
-## 3. Common Commands
+## 4. Common Commands
 
 | Command | Description |
 |---------|-------------|
@@ -160,7 +171,7 @@ model=
 
 ---
 
-## 4. Web SSH Terminal Access
+## 5. Web SSH Terminal Access
 
 After startup, access the Web SSH terminal via browser:
 
