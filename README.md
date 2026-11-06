@@ -126,7 +126,7 @@ bash sh_client_bot.sh
 - **客户端维护** — 网页上升级、重启客户端，查看日志
 - **对象存储** — OCI Object Storage 的 Bucket 和文件管理
 - **邮件服务** — 一键搭建发信域名和 SMTP 账号、测试发信
-- **AWS 管理** — EC2 实例和防火墙，Lightsail 实例创建、管理、流量、换 IP，费用统计
+- **AWS 管理** — EC2 实例、防火墙和 IPv6，Lightsail 实例创建、管理、流量、换 IP、IPv6，费用统计
 - **GCP 管理** — Compute Engine 实例创建/管理/删除、换 IP、概览统计、流量查询
 - **DigitalOcean 管理** — Droplet 创建/管理、保留 IP、带宽监控、账单概览
 - **Azure 管理** — VM 创建/删除/重启、换 IP、资源用量

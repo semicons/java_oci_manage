@@ -126,7 +126,7 @@ Manage multi-cloud resources directly from your browser — fully aligned with t
 - **Client Maintenance** — Upgrade and restart the client from the browser, read its logs
 - **Object Storage** — OCI Object Storage bucket and file management
 - **Email Delivery** — Set up a sending domain and SMTP account in one click, send a test
-- **AWS Management** — EC2 instances and firewall; Lightsail creation, management, traffic, and IP changes; costs
+- **AWS Management** — EC2 instances, firewall, and IPv6; Lightsail creation, management, traffic, IP changes, and IPv6; costs
 - **GCP Management** — Compute Engine instance create/manage/delete, change IP, overview stats, traffic query
 - **DigitalOcean Management** — Droplet create/manage, reserved IP, bandwidth monitoring, billing overview
 - **Azure Management** — VM create/delete/restart, change IP, resource usage

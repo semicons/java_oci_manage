@@ -163,9 +163,10 @@ The way in when SSH is not.
 | Action | Notes |
 |------|------|
 | Instance list | Every EC2 instance and its state |
-| Create instance | Pick image, type, SSH key; progress is shown after creating |
+| Create instance | Pick image, type, SSH key, optionally tick "Assign IPv6"; progress is shown after creating |
 | Start / stop / reboot | Basic actions |
 | Terminate | Permanent |
+| Add IPv6 | Instance card → "Change IP" → "Add IPv6". If the network has no IPv6 yet it is set up automatically, and security group rules open to all IPv4 are opened to all IPv6 too. Some systems only see the new address after a reboot |
 
 ### EC2 firewall / security groups
 
@@ -187,7 +188,7 @@ Remove every inbound rule and SSH stops working too; remove every outbound rule 
 | Action | Notes |
 |------|------|
 | Instance list | IP, bundle, OS, specs, region, creation time |
-| Create instance | Switch the AWS creation page to Lightsail, then pick region, zone, OS, bundle, key, name, and count. Saved public keys can be used directly. When done it shows the instances and IPs and sends a Telegram message |
+| Create instance | Switch the AWS creation page to Lightsail, then pick region, zone, OS, bundle, key, name, and count. Optionally "Enable IPv6". Saved public keys can be used directly. When done it shows the instances and IPs and sends a Telegram message. Bundles tagged "IPv6 only" have no public IPv4, so both your network and the panel's network must support IPv6 to connect |
 | Start / stop / reboot | Basic actions |
 | Delete | With confirmation |
 | This month's traffic | In, out, total, and the bundle allowance. For reference only — not billed usage |
@@ -199,7 +200,8 @@ Remove every inbound rule and SSH stops working too; remove every outbound rule 
 | Static IP | Create and attach, detach, release |
 | Change static IP | Swap in a new static IP; the old one is released |
 | Reboot for new IP | For instances without a static IP, stop and start to get a new public IP |
-| Firewall ports | View and edit open ports, including ranges |
+| Firewall ports | View and edit open ports, including ranges. On instances with IPv6, the rules apply to IPv6 too |
+| IPv6 | "Enable" or "Disable" on the instance card. Disabling releases the current IPv6 address; enabling again gives a new one |
 
 ### Other
 

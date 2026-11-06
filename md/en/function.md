@@ -110,7 +110,7 @@
 - [x] Let's Encrypt certificates, issued and renewed automatically
 - [x] Cloud host sync (import existing machines from every cloud)
 - [x] Upload and edit cloud configs in the browser, effective on save
-- [x] MCP access (let Claude Code, Codex, and Cursor work on the servers you authorize, through the panel)
+- [x] MCP access (let Claude Code, Codex, and Cursor work on the servers you authorize, through the panel; tokens can be renewed and their hosts changed)
 - [x] Upgrade, restart, and read logs of the client from the browser
 - [x] Telegram code login
 - [x] Chinese and English interface
@@ -143,10 +143,10 @@
 
 ### AWS
 
-- [x] EC2 instances (list, create, start, stop, reboot, terminate)
+- [x] EC2 instances (list, create, start, stop, reboot, terminate, add IPv6)
 - [x] EC2 firewall / security groups (attach, detach, create, delete, edit rules, one-click presets)
 - [x] Lightsail instances (create, list, start, stop, reboot, delete, monthly traffic)
-- [x] Lightsail network / IP (static IP, change IP, firewall ports)
+- [x] Lightsail network / IP (static IP, change IP, firewall ports, IPv6 on / off)
 - [x] VPC
 - [x] Costs
 - [x] Quotas

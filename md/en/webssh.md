@@ -15,6 +15,8 @@ Two ways to sign in:
 - **Username and password** — the `username` and `password` in `client_config`
 - **Telegram code** — click "Send Code", the bot sends you a code, enter it within 60 seconds
 
+After too many wrong passwords, password sign-in is paused for a while (up to 30 minutes). Sign in with a Telegram code instead, or restart the client to lift it right away.
+
 ![Login Page](../../screenshots/login.jpg)
 
 ---
@@ -73,7 +75,7 @@ For servers you cannot reach directly, fill in a SOCKS5 proxy address and port i
 
 The first time you connect to a server you are shown its fingerprint to confirm, and it is remembered.
 
-If you are later told the fingerprint has changed and you have not reinstalled that server, stop — you may not be talking to your machine.
+If you are later told the fingerprint has changed: if you reinstalled or rebuilt that server yourself, click "Clear fingerprint and reconnect" and the panel records the new one; if you have not, stop — you may not be talking to your machine.
 
 ### Quick connect
 
@@ -82,6 +84,8 @@ If you are later told the fingerprint has changed and you have not reinstalled t
 ### Auto-reconnect
 
 If the server reboots or the network drops, the terminal reconnects on its own.
+
+After you run `exit` on the server it does not reconnect automatically; press Enter to reconnect.
 
 ### Tabs
 

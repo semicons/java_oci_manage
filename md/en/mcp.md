@@ -28,19 +28,21 @@ Click "New Token" and fill in four things:
 |------|------|
 | **Name** | Anything you will recognize, e.g. `claude-code-laptop` |
 | **Scope** | Read-only or executable, see below |
-| **Expiry** | Stops working on its own after this |
-| **Authorized hosts** | Tick the machines this token may use; anything unticked is off limits. If the list is empty, save some hosts on the host panel first |
+| **Expiry** | Stops working on its own after this. You can also pick "Never", but a token like that keeps working after a leak until you revoke it |
+| **Authorized hosts** | Choose "Specific hosts" and tick the machines this token may use; anything unticked is off limits. If the list is empty, save some hosts on the host panel first. Or choose "All hosts (including ones added later)", see below |
 
 | Scope | What it allows |
 |------|---------|
 | **Read-only** | See which machines there are and read files. No commands |
 | **Executable** | Run commands and read / write files — effectively handing it that SSH account |
 
+"All hosts (including ones added later)": the token can work on every host in the panel that has saved login credentials or a recorded fingerprint, including hosts you add later, without asking you again. Hosts added by cloud sync that you have never connected to are not included; tick them under "Specific hosts" if needed. Only use this if you fully trust the AI.
+
 ---
 
 ## Step 3: configure the AI client
 
-The token is **shown only once**, and the same page gives you three ready-to-paste configs:
+Once the token is created, the same page gives you three ready-to-paste configs (you can click "Show" in the token list to see them again later):
 
 - Claude Code
 - Codex CLI: two parts — the `export` line goes in `~/.bashrc` or `~/.zshrc` (takes effect in a new terminal), the rest in `~/.codex/config.toml`
@@ -85,10 +87,15 @@ Every file it reads and every command output is sent to the AI provider. Keep it
 
 ---
 
-## Revoking and the call log
+## Managing tokens and the call log
 
-The token list shows how many machines each token covers, when it expires, and when it was last used.
+The token list shows how many machines each token covers, how long until it expires, and when it was last used.
 
-"Revoke" takes effect immediately: the AI loses access at once, and **anything it has running is stopped too**.
+| Action | Notes |
+|------|------|
+| **Show** | See the token and its ready-made configs again |
+| **Renew** | The validity period restarts from now. The token stays the same, so the AI client config does not change |
+| **Hosts** | Change which hosts the token can use. The token stays the same and the AI uses the new scope on its next call. Running jobs on hosts you remove are disconnected |
+| **Revoke** | Takes effect immediately: the AI loses access at once, and **anything it has running is stopped too** |
 
 The "Call Log" below shows everything the AI has done. It can be cleared.
